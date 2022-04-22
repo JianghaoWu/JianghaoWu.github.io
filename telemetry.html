@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jin XIA's Blog - Telemetry</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- my style-->
+    <link href="css/myStyle.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Jin XIA</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="telemetry.html">Sample Post</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Telemetry for MovingBlocks</h1>
+                        <h2 class="subheading">GSoC 2017 project: a telemetric-gathering system in a sandbox game Terasology</h2>
+                        <p class="post-meta">Posted by <a href="index.html">Jin XIA</a> on May 7, 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                    <p> In this blog, I'll update the progress of the 2017 GSoC project <a href="https://summerofcode.withgoogle.com/projects/#4581974327951360">Telemetry for MovingBlocks</a>. If you are interested MovingBlocks/Terasology, you can learn more in <a href="http://forum.terasology.org/">forum</a> or <a href="https://github.com/MovingBlocks/Terasology">GitHub</a>
+
+                    <p> You can get more information about this project by reading:
+                      <ul>
+                        <li><a href="https://docs.google.com/document/d/1N4zkThE7VG_LSR67XH8H7UkvMKrTSSAf7eoj1Esz66c/edit?usp=sharing"> the proposal </a></li>
+                        <li><a href="https://github.com/orgs/MovingBlocks/projects/2"> GitHub project borad</a></li>
+                      </ul>
+                    </p>
+
+                    <h2 class="section-heading">Project Overview</h2>
+
+                    <h2 class="section-heading">Bonding Period</h2>
+
+                    <p>
+                      I started Bonding Period by dockerizing the telemetry system.
+
+                    </br>
+                    </br>
+
+                      At first I found a snowplow-mini docker in dockerHub, I linked the snowplow-mini docker with the logstash docker: <a href="https://github.com/GabrielXia/telemetry/tree/master/docker-coupled">telemetry-coupled</a>. After talking with my mentor @qwc, we thought that that docker is not service oriented and could only be used for test.
+
+                    </br>
+                    </br>
+                      So then I started a more un-couped telemetry system: <a href="https://github.com/GabrielXia/telemetry">telemetry</a>. Since I'm not familar with docker and snowplow stacks, the setup took more time than I expected.
+                    </p>
+
+                    <h2 class="section-heading">Phrase 1</h2>
+
+                    <h3>Week 1 (30/May ~ 5/June)</h3>
+                    <p>
+                    GSoC started! There are some issues left in the telemetry system, so I fixed <a href="https://github.com/GabrielXia/telemetry/issues/5">telemetry#5</a>, <a href="https://github.com/GabrielXia/telemetry/issues/7">telemetry#7</a>, <a href="https://github.com/GabrielXia/telemetry/issues/13">telemetry#8</a>, <a href="https://github.com/GabrielXia/telemetry/issues/9">telemetry#9</a> in the week.
+                  </br>
+                  </br>
+
+                    Later in the week, I worked on documentation of the telemetry system: <a href="https://github.com/GabrielXia/telemetry/wiki">wiki</a>.
+
+                  </br>
+                  </br>
+                    Then I worked on the Terasology codebase. I imported the snowplow tracker lib to track the metrics. The snowplow lib had a version conflict with 'jackson-core' in CrashReport. Problems resolved by excluding the 'jackson-core' package in CrashReporter: <a href="https://github.com/MovingBlocks/CrashReporter/pull/39">CR#39</a>. Then I created a first telemetry event which tracked some basic infos like os, video card, java version, etc. The PR corresponded is <a href="https://github.com/MovingBlocks/Terasology/pull/2968">Terasology#2968</a>. I tested it locally with telemetry system and mentors @skaldarnar @rzats helped me test. Here is what it looked like in server:
+                  </br>
+                </br>
+                    <img src="img/telemetry/system_context.png"/>
+                  </p>
+                  <!-- end of week 1 -->
+
+                  <!-- start of week2 -->
+                  <h3>Week 2 (6/June ~ 12/June)</h3>
+                  <p>
+                  In week 2, following the work of week 1, I implemented the user's authorization.
+                </br>
+              </br>
+
+                  The user's authorization is implemented by adding two config types in `Config.class` instance in game context: `TelemetryConfig` (Enable telemetry or not) and `LaunchPopupConfig` (whether the user wants to see the popup when launching the game).
+
+                  </br>
+                  </br>
+
+                  Together with the user authorization, I implemented a `LaunchPopup` which will pop up during game launching, tell user what telemetry does and ask for user's permission. With the help of @Cervate and @skaldarnar, we added a buttom which will link to the `Metrics Menu` (will be implemented in furture). Here is update in PR: <a href="https://github.com/MovingBlocks/Terasology/pull/2968#issuecomment-306286883">update week 2</a> is the update in PR. The popup looked as follow:
+                </br>
+              </br>
+                  <img src="img/telemetry/launch.png" />
+
+                </p>
+                <!-- end of week 2 -->
+
+                <!-- start of week3 -->
+                <h3>Week 3 (13/June ~ 19/June)</h3>
+                <p>
+                In week 3, I fixed two bugs in the docker server: <a href="https://github.com/GabrielXia/telemetry/issues/10">telemetry#10</a> and <a href="https://github.com/GabrielXia/telemetry/issues/11">telemetry#11</a>
+              </br>
+            </br>
+                Quite a few work is done in the Terasology code:
+              </br>
+            </br>
+                A `TelemetrySubSystem` engine system initializes all the telemetry stuffs, and then injects the `emitter` and the `metrics` to game context so that the other classes can use them for telemetry.
+              </br>
+            </br>
+                Similar to the `Config.class`, the `Metrics.class` stores all the metric instance in the environment. It'll be used to show to the users what we tracker. In the future, it'll be used if we want to store some user's statistics in files. E.g. If we want to count the total number of boxes distroyed and we might need to store the number of boxes every time game shuts down.
+
+            </br>
+          </br>
+                The abstract `Metric.class` is a class to extend for every new `Metric` class. A new `Metric` class should also be annotitated by `@TelemetryCategory`. Every field being tracked should be marked as `@TelemetryField`.
+
+            </br>
+          </br>
+                The `TelemetryScreen` shows to users the field names and field values that we track. Users can enable and disable the telemetry via the check boxes in the menu. It finds these telemetry metrics automatically by the annotation `@TelemetryCategory`. So if a new metric extends the abstract `metric.class` and all the telemetry fields marked as `@TelemetryField`, their names and values will be showed automatically. Thanks @onitas for reviewing the PR.
+
+
+                </br>
+                </br>
+
+                Here is the update in PR: <a href="https://github.com/MovingBlocks/Terasology/pull/2968#issuecomment-308883662">update week 3</a>, and the `Metrics Menu` looked like this:
+              </br>
+            </br>
+              <img src="img/telemetry/metrics_screen_system.png" />
+              </p>
+              <!-- end of week 3 -->
+
+
+              <!-- start of week4 -->
+              <h3>Week 4 (20/June ~ 26/June)</h3>
+              <p>
+                 In the week 4, I worked on the error reporting. The error reporting system will enrich the error logs and send them to the server.
+              </br>
+              </br>
+                 A new configuration in the logstash server to descode the json logs: <a href="https://github.com/GabrielXia/telemetry/issues/13">telemetry#13</a>
+
+              </br>
+              </br>
+                 I used <a href="https://github.com/logstash/logstash-logback-encoder">logstash-logback-encoder</a> library. I implemented a `TelemetryLogstashAppender` based on the `LogstashTcpSocketAppender`. It has a `gameContext` field and it could be enabled or disabled via its methods.
+
+              </br>
+            </br>
+                Two json providers `SystemContextJsonProvider` and `ModulesJsonprovider` enriches the error logs with system information and module information. Also I added a new metric `ModulesMetric` to track the module information in game.
+              <br>
+            </br>
+                To turn on/off the error reporting, the user can go to the Metrics Menu and clicks the check box to enable/disable it. It's implemented via a listener on the check box and the filters in the logback appender. Thanks @Cervator for reviewing the code.
+
+              </br>
+              </br>
+                Here is the update in the PR: <a href="https://github.com/MovingBlocks/Terasology/pull/2968#issuecomment-310870209"> update week4</a>. The error logs received during launching a game looked like this:
+
+                <img src="img/telemetry/error_loading_game.png"/>
+              </br>
+              The informations of a log received:
+              <img src="img/telemetry/logback_appender1.png" />
+              <img src="img/telemetry/logback_appender2.png"  />
+              </br>
+              </p>
+              <!-- end of week 4 -->
+                    <h2 class="section-heading">Phrase 2</h2>
+
+                    <!-- start of week5 -->
+                    <h3>Week 5 (27/June ~ 4/July)</h3>
+                    <p>
+                       The PR of the period 1 became large. Mentors helped me review the code and there are several problems. In the week 5 I worked on the PR to help it merged in Terasology.
+                    </br>
+                    </br>
+                       Since the telemetry code is not ready for use. To help it merged, I turned off all the telemetry stuffs including snowplow tracker and error reporting default to `OFF`. There two `checkbox`s in the `Metrics Menu` on which the user can turn on the telemetry. A `ServerPopop` would appear asking for the server infomation such as address, port, etc.
+
+                    </br>
+                    </br>
+                       Here is the update in PR: <a href="https://github.com/MovingBlocks/Terasology/pull/2968#issuecomment-312094054">update week5</a>. The `ServerPopup` looks as below:
+                      <img src="img/telemetry/serverPopup.png"/>
+                    </p>
+                    <!-- end of week 5 -->
+
+                    <!-- start of week6 -->
+                    <h3>Week 6 (5/July ~ 11/July)</h3>
+                    <p>
+                      At the beginning of week 6, I fixed an `Tracker unclosed` issue in snowplow-tracker lib which would be adopted by organisation snowplow: <a href="https://github.com/snowplow/snowplow-java-tracker/pull/189">snowplow-java-tracker#189</a>.
+
+                    </br>
+                    </br>
+                      MovingBlocks org provided me with a server for the telemetry. The graphic interface Kibana is available on site: <a href="http://utility.terasology.org:5601/">Kibana</a>
+                    </br>
+                    </br>
+                       In week 6, I also started to work on "game play telemetry" which recorded metrics such as block destroyed in game. A first attampt here in <a href="https://github.com/MovingBlocks/Terasology/pull/3016/commits/2f6776c1b324cd176e41ef7bb87ef7014f474b77">first commit</a> was to track player configuration such as network mode, language, player height in game, etc. Then with user's permission, these information will be sent to the telemetry server.
+                      <img src="img/telemetry/gameConfiguration.png"/>
+                    </p>
+                    <!-- end of week 6 -->
+
+                    <!-- start of week7 -->
+                    <h3>Week 7 (12/July ~ 18/July)</h3>
+                    <p>
+                      In the week 7, I continued to work on "game play telemetry". The metrics includes blocks destroyed, blocks placed, monsters killed, game configuration, and game play statistics such as distance traveled, play time. These metrics could not only used for telemetry but also used to visualise the game play stats in mefor fun. Since all these game play stats stored in the player entity, it could help to develpe a game play achivement system to all the stats of all the players in a multiplayer game.
+                    </br>
+                    </br>
+                      The PR corresponded is <a href="https://github.com/MovingBlocks/Terasology/pull/3016">here</a>. And you can see those game play stats show as below:
+
+                      <img src="img/telemetry/blockDestroyed.png"/>
+                      <img src="img/telemetry/gameplay.png"/>
+                    </p>
+                    <!-- end of week 7 -->
+
+                    <!-- start of week8 -->
+                    <h3>Week 8 (19/July ~ 25/July)</h3>
+                    <p>
+                      In the week 8, I polished <a href="https://github.com/MovingBlocks/Terasology/pull/3016">the PR of game playtelemetry</a> to help it merged.
+                    </br>
+                    </br>
+                      There are several <a href="https://github.com/MovingBlocks/Terasology/issues/3011">issues about telemetry</a>left. I fixed most of the issues and some bugs such as telemetry not re initialize in a new game.
+                    </br>
+                    </br>
+                      In week 8, together with mentors, we discussed about a user identification functionality. To better understand those stats from telemetry, we thought it would be better to identify the user. We thought including a code which indentify the user in each metric but this code should not have personal information. In final, we chosed a SHA2 hashed string of the MAC address as the user id. One of these commits: <a href="https://github.com/MovingBlocks/Terasology/pull/3016/commits/430c4b5dfe88c6edcc56cd01d10e1accb2ea519b">430c4b5</a>.
+
+                    </p>
+                    <!-- end of week 8 -->
+
+
+                    <h2 class="section-heading">Phrase 3</h2>
+
+                    <!-- start of week9 -->
+                    <h3>Week 9 (25/July ~ 31/July)</h3>
+                    <p>
+                      In week 9, I started with some improvements in telemetry code in Terasology: <a href="https://github.com/MovingBlocks/Terasology/pull/3048">PR #3048</a>.
+                    </br>
+                    </br>
+                      I did also some improvements in <a href="https://github.com/GabrielXia/telemetry">telemtry server</a>. One of the improvment was to set all string fields in Elasticsearch default to `no analyzed`. By default, the Elasticseach analyze all the string fields. For example, in the dashborad, "Intel HD Graphics 400" will be seperated to "Intel", "HD", "Graphics", "400". It was not very useful for us and it got in the way when we wanted some courbes about the comparision about different string fields. On changing Elasticsearch to `string no analyzed`, we could finally get some nice graphes. You can see this commit here: <a href="https://github.com/GabrielXia/telemetry/commit/ac2ce75b0145cf10f8389e483e260c4c6a630b67">9f4e8b4</a>. Below is a sample circle graph about the graphic card info from different users. "headless" means the user is running a handless server and "Disabled Field" means the user doesn't want this field to be sent.
+                      <img src="img/telemetry/circle.png"/>
+
+                    </p>
+                    <!-- end of week 9 -->
+
+                    <!-- start of week10 -->
+                    <h3>Week 10 (1/August ~ 7/August)</h3>
+                    <p>
+                      In the week 10, I planed to implement a light feedback reporting functionality based on snowplow tracker. After discussing with mentors, we thought that might not be a good idea because the feedback maybe includes some personal information and it might not be good to show feedbacks in <a href="utility.terasology.org:5601">kibana</a>.
+                    </br>
+                    </br>
+                      So I turned to implent "more users' options". The telemetry code had allowed the user to choose wheter send metrics to the server. We wanted some thing suppler: the user could choose which telemetry field to be sent but not the others. What's more, it could be possible for the user to choose which group of metrics to be sent but not the others. For example, the user could choose the game play metric to be sent but not the system info metric. This functionality is implemented by adding check box to each telemetry field in `Metrics Menu`, adding several listeners to these checkboxs and binding these check boxes with map which recorded wether the field was allowed to be sent. The code is here: <a href="https://github.com/MovingBlocks/Terasology/pull/3056">PR #3056</a>.
+                    </p>
+                    <!-- end of week 10 -->
+
+                    <!-- start of week11 -->
+                    <h3>Week 11 (8/August ~ 14/August)</h3>
+                    <p>
+                      In the week 11, I implemented a telemetry API which the other modules could use to track events. Telemetry in other modules should behave the same as telemetry in engine. For example, all the metrics should be added in `Metrics` instance in context and all the fields should be shown in `Metrics Menu`.
+                    </br>
+                    </br>
+                      To acheive this API, I had to rewrite `Metrics.class` to drive open-closed principle: A new metric instance should be added to it automatically. At first I was thinking about forcing all metrics to be added to `Metrics.class` when constructing. Mentors taught me a more beautiful way: using `annotion` to fetch all Metric Classes and use `Constructor.newInstance()` to auto instantiate these classes.
+                    </br>
+                    </br>
+                      The telemetry API was acheved by marking telemetry class `@API`, adding external module to `whitelist` and changing some methods to `AccessController.doPrivileged()`. I learned pretty much about java sandbox model. The new PR and test module are here: <a href="https://github.com/MovingBlocks/Terasology/pull/3075">PR#3075</a> and <a href="https://github.com/GabrielXia/TelemetryApiTest">TelemetryApiTest</a>.
+                    </p>
+                    <!-- end of week 11 -->
+
+                    <h2 class="section-heading">Project Review</h2>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://github.com/GabrielXia">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="mailto:ga.xiajin@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
