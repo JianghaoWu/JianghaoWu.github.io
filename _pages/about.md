@@ -12,8 +12,8 @@ Welcome! This is Jianghao, currently working toward my Master degree in Robotics
 
 ## News
 - **[Jun, 2023]** Our paper "A novel one-to-multiple unsupervised domain adaptation framework for abdominal organ segmentation" has been accepted by **MedIA**. ([Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841523001330))
-- **[Apr, 2023]** Our paper "TISS-net: Brain tumor image synthesis and segmentation using cascaded dual-task networks and error-prediction consistency" has been accepted by **Neurocomputing**. ([Link](https://www.sciencedirect.com/science/article/pii/S0925231223004186)
+- **[Apr, 2023]** Our paper "TISS-net: Brain tumor image synthesis and segmentation using cascaded dual-task networks and error-prediction consistency" has been accepted by **Neurocomputing**. ([Link](https://www.sciencedirect.com/science/article/pii/S0925231223004186))
 - **[Feb, 2023]** Our paper "UPL-TTA: Uncertainty-Aware Pseudo Label Guided Fully Test Time Adaptation for Fetal Brain Segmentation" has been accepted by **IPMI 2023 **. ([Link](https://link.springer.com/chapter/10.1007/978-3-031-34048-2_19))
 - **[Dec, 2022]** I have joined **Shanghai AI Lab**([Link](https://www.shlab.org.cn/)) as a research intern.
 - **[Sep, 2022]** 1 joint paper "CrossMoDA 2021 challenge: Benchmark of cross-modality domain adaptation techniques for vestibular schwannoma and cochlea segmentation" has been accepted by **MedIA**. ([Link](https://www.sciencedirect.com/science/article/pii/S1361841522002560))
-- **[Jan, 2022]** My first paper "FPL-UDA: Filtered Pseudo Label-Based Unsupervised Cross-Modality Adaptation for Vestibular Schwannoma Segmentation" has been accepted by **ISBI 2022 (Oral Presentation)**. ([Link](https://ieeexplore.ieee.org/abstract/document/9761706/))
+- **[Jan, 2022]** My first paper "FPL-UDA: Filtered Pseudo Label-Based Unsupervised Cross-Modality Adaptation for Vestibular Schwannoma Segmentation" has been accepted by **ISBI 2022 (Oral Presentation)**. ([Link](https://ieeexplore.ieee.org/abstract/document/9761706/))([code](https://github.com/JianghaoWu/FPL-UDA))
