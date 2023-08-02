@@ -21,16 +21,9 @@ author_profile: true
   [[paper](https://www.sciencedirect.com/science/article/pii/S0925231223004186)][[pdf]](../files/paper/TISS-Net.pdf)
   
   * <b> CrossMoDA 2021 challenge: Benchmark of cross-modality domain adaptation techniques for vestibular schwannoma and cochlea segmentation</b> <br> 
-  <b>Jianghao Wu</b>, Guotai Wang | UESTC Team)
-  <details>
-  <summary><b><font size="1"><b><em>Full Author List</em></b>:  Reuben Dorent, Aaron Kujawa, ... (点击展开)</summary>
+  <b>Jianghao Wu</b>, Guotai Wang | UESTC Team
   <div style="height: 38px; overflow: auto;">
-    <!-- 这里放下拉列表里的作者内容 -->
-    <b><font size="1"><b><em>Full Author List</em></b>:  Reuben Dorent, Aaron Kujawa, ...
-    <!-- 可以继续添加更多作者 -->
-  </div>
-</details>
-
+  <font size="1"><b><em>Full Author List</em></b>:  Reuben Dorent, Aaron Kujawa, Marina Ivory, Spyridon Bakas, Nicola Rieke, Samuel Joutard, Ben Glocker, Jorge Cardoso, Marc Modat, Kayhan Batmanghelich, Arseniy Belkov, Maria Baldeon Calisto, Jae Won Choi, Benoit M. Dawant, Hexin Dong, Sergio Escalera, Yubo Fan, Lasse Hansen, Mattias P. Heinrich, Smriti Joshi, Victoriya Kashtanova, Hyeon Gyu Kim, Satoshi Kondo, Christian N. Kruse, Susana K. Lai-Yuen, Hao Li, Han Liu, Buntheng Ly, Ipek Oguz, Hyungseob Shin, Boris Shirokikh, Zixian Su, Guotai Wang, <b>Jianghao Wu</b>, Yanwu Xu, Kai Yao, Li Zhang, Sebastien Ourselin, Jonathan Shapey, Tom Vercauteren</font></div>
   
   <b>Medical Image Analysis, 83 (2023): 102628. (2022 IF 13.828)</b>.<br>
   <b>[[paper](https://www.sciencedirect.com/science/article/pii/S1361841522002560)][[pdf]](../files/paper/CrossMoDA.pdf)
