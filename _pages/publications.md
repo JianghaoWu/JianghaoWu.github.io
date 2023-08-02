@@ -26,7 +26,7 @@ author_profile: true
   <font size="1"><b><em>Full Author List</em></b>:  Reuben Dorent, Aaron Kujawa, Marina Ivory, Spyridon Bakas, Nicola Rieke, Samuel Joutard, Ben Glocker, Jorge Cardoso, Marc Modat, Kayhan Batmanghelich, Arseniy Belkov, Maria Baldeon Calisto, Jae Won Choi, Benoit M. Dawant, Hexin Dong, Sergio Escalera, Yubo Fan, Lasse Hansen, Mattias P. Heinrich, Smriti Joshi, Victoriya Kashtanova, Hyeon Gyu Kim, Satoshi Kondo, Christian N. Kruse, Susana K. Lai-Yuen, Hao Li, Han Liu, Buntheng Ly, Ipek Oguz, Hyungseob Shin, Boris Shirokikh, Zixian Su, Guotai Wang, <b>Jianghao Wu</b>, Yanwu Xu, Kai Yao, Li Zhang, Sebastien Ourselin, Jonathan Shapey, Tom Vercauteren</font></div>
   
   &emsp;&emsp;<b>Medical Image Analysis, 83 (2023): 102628. (2022 IF 13.828)</b>.<br>
-  [[paper](https://www.sciencedirect.com/science/article/pii/S1361841522002560)][[pdf]](../files/paper/CrossMoDA.pdf)
+  &emsp;&emsp;[[paper](https://www.sciencedirect.com/science/article/pii/S1361841522002560)][[pdf]](../files/paper/CrossMoDA.pdf)
 
 ## Conference Papers
 * <b>UPL-TTA: Uncertainty-Aware Pseudo Label Guided Fully Test Time Adaptation for Fetal Brain Segmentation</b> <br> 
