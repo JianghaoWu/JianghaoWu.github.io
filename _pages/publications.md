@@ -11,7 +11,7 @@ author_profile: true
 ## arXiv preprint
 * <b>MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset</b> <br> 
   Guotai Wang, <b>Jianghao Wu</b>, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang<br>
-  [[paper](https://arxiv.org/pdf/2306.16925)][[pdf](../files/paper/MIS-FM)][[code](https://github.com/openmedlab/MIS-FM)]
+  [[paper](https://arxiv.org/pdf/2306.16925)][[pdf](../files/paper/MIS-FM.pdf)][[code](https://github.com/openmedlab/MIS-FM)]
 
 ## Journal Articles
   * <b> A novel one-to-multiple unsupervised domain adaptation framework for abdominal organ segmentation</b> <br> 
