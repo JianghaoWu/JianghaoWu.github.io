@@ -1,6 +1,7 @@
 ---
 title: "Care-oriented Elderly Fall Protection and Alarm Device"
-excerpt: "This device consists of a wearable anti-fall brace and an IoT-enabled alarm and positioning cane. <br/><img src='/images/guaizhang.png'>"
+excerpt: "This device consists of a wearable anti-fall brace and an IoT-enabled alarm and positioning cane. <br/><img src='/images/guaizhang.png' width='300' height='200'>
+
 collection: portfolio
 ---
 
