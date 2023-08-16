@@ -8,6 +8,10 @@ author_profile: true
  You can also find my articles on [my Google Scholar profile](https://scholar.google.com.hk/citations?user=f5f1xvYAAAAJ&hl=en).
 
 {% include base_path %}
+## arXiv preprint
+* <b>MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset</b> <br> 
+  Guotai Wang, <b>Jianghao Wu</b>, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang<br>
+  [[paper](https://arxiv.org/pdf/2306.16925)][[pdf](../files/paper/MIS-FM)][[code](https://github.com/openmedlab/MIS-FM)]
 
 ## Journal Articles
   * <b> A novel one-to-multiple unsupervised domain adaptation framework for abdominal organ segmentation</b> <br> 
@@ -37,4 +41,4 @@ author_profile: true
 * <b>FPL-UDA: Filtered Pseudo Label-Based Unsupervised Cross-Modality Adaptation for Vestibular Schwannoma Segmentation</b> <br> 
   <b>Jianghao Wu</b>, Ran Gu, Guiming Dong, Guotai Wang, Shaoting Zhang<br>
   <b>ISBI2022 (Oral Presentation)</b>.<br>
-  [[paper](https://ieeexplore.ieee.org/abstract/document/9761706/)][[code](https://github.com/JianghaoWu/FPL-UDA)][[pdf](../files/paper/FPL-UDA_ISBI.pdf)]
+  [[paper](https://ieeexplore.ieee.org/abstract/document/9761706/)][[pdf](../files/paper/FPL-UDA_ISBI.pdf)][[code](https://github.com/JianghaoWu/FPL-UDA)]
