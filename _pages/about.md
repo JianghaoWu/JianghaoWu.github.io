@@ -11,7 +11,9 @@ redirect_from:
 Welcome! This is Jianghao, currently working toward my Master degree in Robotics Engineering with the [School of Mechanical and Electrical Engineeringe, University of Electronic Science and Technology of China](https://www.uestc.edu.cn/), advised by Prof. [Guotai Wang ](https://scholar.google.com.hk/citations?user=Z2sFN4EAAAAJ&hl=en) and Prof. [Shaoting Zhang ](https://scholar.google.com.hk/citations?user=oiBMWK4AAAAJ&hl=en). My research focuses on developing novel methods to reduce the annotation efforts for computer-aided detection and diagnosis. This includes, but is not limited to, techniques such as Domain Adaptation, Test Time Adaptation, and Self-supervised learning.
 
 ## News
-- **[Oct, 2023]** I have been awarded the "**Outstanding Graduate of Sichuan Province**" and "Outstanding Graduate of the University of Electronic Science and Technology of China (UESTC)" ! ([Link](https://www.smee.uestc.edu.cn/info/1109/19461.htm))
+- **[Apr, 2024]** Our paper "FPL+: Filtered Pseudo Label-based Unsupervised Cross-Modality Adaptation for 3D Medical Image Segmentation" has been accepted by **IEEE TMI**.
+- **[Mar, 2024]** I became a reviewer for **MICCAI 2024**, as a master's student!
+- **[Feb, 2024]** Our paper "RPL-SFDA: Reliable Pseudo Label-guided Source-free Cross-modality Adaptation for NPC GTV Segmentation" has been accepted by **ISBI 2024**
 - **[Oct, 2023]** I have been awarded the China **National Scholarship**! ([Link](https://www.smee.uestc.edu.cn/info/1109/19331.htm))
 - **[Sep, 2023]** Our paper "UPL-SFDA: Uncertainty-aware Pseudo Label Guided Source-Free Domain Adaptation for Medical Image Segmentation" has been accepted by **IEEE TMI**. ([Link](https://ieeexplore.ieee.org/document/10261231))
 - **[Jun, 2023]** Our paper "A novel one-to-multiple unsupervised domain adaptation framework for abdominal organ segmentation" has been accepted by **MedIA**. ([Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841523001330))
