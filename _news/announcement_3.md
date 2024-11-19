@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-10-06 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+We won second place in the MICCAI 2024 MBH-Seg Challenge: Multi-class Brain Hemorrhage Segmentation in Non-contrast CT! 
