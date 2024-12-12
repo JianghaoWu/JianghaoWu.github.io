@@ -1,65 +1,56 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: CV
+permalink: /CV/
+description: Curriculum Vitae
 nav: true
 nav_order: 3
-display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+ \---
+layout: page
+permalink: /about/
+title: Achievements & Contributions
+description: Awards, recognitions, and reviewer experience
+nav: true
+nav_order: 6
+\---
 
-{% else %}
+\## Research Experience
 
-<!-- Display projects without categories -->
+\-  **Shanghai Artificial Intelligence Laboratory**
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+2022.11 ~ 2024.02
 
-  <!-- Generate cards for each project -->
+\-  **SenseTime**
 
-{% if page.horizontal %}
+2022.03-2022.07
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+\-  **华西精创医疗科技（成都）有限公司**
+
+2022.07-2022.08
+
+---
+
+\## Awards & Recognitions
+\- **1 st Place Award in MMIS-2024@ACMMM 2024** 
+
+\- **2 st Place Award in MBH-Seg@MICCAI 2024** 
+
+\- **China National Scholarship 2023**
+
+\## Reviewer Experience
+
+\### Journals
+\- **IEEE Transactions on Medical Imaging  (TMI)** 
+
+\### Conferences
+\- **International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)** 
+
+\- **IEEE International Symposium on Biomedical Imaging  (ISBI)** 
+
+\---
+ 
+
+
