@@ -8,16 +8,7 @@ nav_order: 3
 horizontal: false
 ---
 
- \---
-layout: page
-permalink: /about/
-title: Achievements & Contributions
-description: Awards, recognitions, and reviewer experience
-nav: true
-nav_order: 6
-\---
-
-\## Research Experience
+## Research Experience
 
 \-  **Shanghai Artificial Intelligence Laboratory**
 
@@ -25,27 +16,27 @@ nav_order: 6
 
 \-  **SenseTime**
 
-2022.03-2022.07
+2022.03 ~ 2022.07
 
 \-  **华西精创医疗科技（成都）有限公司**
 
-2022.07-2022.08
+2022.07 ~ 2022.08
 
 ---
 
-\## Awards & Recognitions
+## Awards & Recognitions
 \- **1 st Place Award in MMIS-2024@ACMMM 2024** 
 
 \- **2 st Place Award in MBH-Seg@MICCAI 2024** 
 
 \- **China National Scholarship 2023**
 
-\## Reviewer Experience
+## Reviewer Experience
 
-\### Journals
+### Journals
 \- **IEEE Transactions on Medical Imaging  (TMI)** 
 
-\### Conferences
+### Conferences
 \- **International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)** 
 
 \- **IEEE International Symposium on Biomedical Imaging  (ISBI)** 
