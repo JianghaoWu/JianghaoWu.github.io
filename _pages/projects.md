@@ -38,6 +38,12 @@ horizontal: false
 #### Journals
 \- **IEEE Transactions on Medical Imaging  (TMI)** 
 
+\- **IEEE Transactions on Emerging Topics in Computational Intelligence   (TETCI)** 
+
+\- **IEEE Sensors Journal ** 
+
+\- **Medical Physics ** 
+
 #### Conferences
 \- **International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)** 
 
