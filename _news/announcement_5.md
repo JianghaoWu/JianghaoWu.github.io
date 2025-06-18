@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper is accepted by ISBI 2025!
+One paper is accepted by ISBI 2025 as an oral presentation!
