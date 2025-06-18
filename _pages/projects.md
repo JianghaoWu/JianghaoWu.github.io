@@ -10,6 +10,14 @@ horizontal: false
 
 ### Research Experience
 
+\-  **Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)**
+
+​	2025.02 ~ 2025.05
+
+\-  **University of Electronic Science and Technology of China (UESTC)**
+
+​	2024.07 ~ 2025.02
+
 \-  **Shanghai Artificial Intelligence Laboratory**
 
 ​	2022.11 ~ 2024.02
@@ -38,14 +46,24 @@ horizontal: false
 #### Journals
 \- **IEEE Transactions on Medical Imaging  (TMI)** 
 
+\- **IEEE Transactions on Neural Networks and Learning Systems  (TNNLS)** 
+
+\- **IEEE Transactions on Industrial Informatics (TII)**
+
+\- **IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE)**
+
 \- **IEEE Transactions on Emerging Topics in Computational Intelligence   (TETCI)** 
 
-\- **IEEE Sensors Journal ** 
+\- **Journal of Biomedical and Health Informatics (JBHI)** 
 
-\- **Medical Physics ** 
+\- **IEEE Sensors Journal** 
+
+\- **Medical Physics** 
 
 #### Conferences
 \- **International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)** 
+
+\- **ACM Multimedia (ACM MM)** 
 
 \- **IEEE International Symposium on Biomedical Imaging  (ISBI)** 
 
