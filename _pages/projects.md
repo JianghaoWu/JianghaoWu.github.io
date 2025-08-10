@@ -3,7 +3,7 @@ layout: page
 title: CV
 permalink: /CV/
 description: Curriculum Vitae
-nav: true
+nav: false 
 nav_order: 3
 horizontal: false
 ---
