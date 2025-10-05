@@ -19,7 +19,7 @@ nav_order: 3
 
 <h3 id="github-repositories">Repositories</h3>
 
-<div class="repocards">
+<!-- <div class="repocards">
   {% for user in site.data.github %}
     {% for repository in user.repositories %}
       <div class="repocard-single">
@@ -43,7 +43,7 @@ nav_order: 3
       <img class="repocard-img" alt="{{ site.github_username }} GitHub Stats" src="https://github-readme-stats-1isq-6joamo805-ningding97.vercel.app/api?username={{ site.github_username }}&include_orgs=true&include_all_commits=true&show_icons=true&hide_border=true&show_issues=false&theme=swift&hide=prs,issues">
     </a>
   </div>
-</div>
+</div> -->
 
 <!-- 
 <br>
