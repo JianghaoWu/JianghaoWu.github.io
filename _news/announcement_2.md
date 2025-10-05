@@ -1,7 +1,9 @@
 ---
 layout: post
-date: 2021-1-13
+date: 2024-04-04 07:59:00-0400
 inline: true
+related_posts: false
 ---
 
-Got one [paper](https://openreview.net/forum?id=aCgLmfhIy_f&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2021%2FConference%2FAuthors%23your-submissions)) accepted by ICLR 2021.
+Our paper "FPL+: Filtered Pseudo Label-based Unsupervised Cross-Modality Adaptation for 3D Medical Image Segmentation" has been accepted by IEEE TMI!
+

@@ -34,4 +34,4 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./_site
           # 如需一并写 CNAME（推荐保留仓库根已有 CNAME 文件即可）
-          # cname: jianghao.site
+          cname: jianghao.site

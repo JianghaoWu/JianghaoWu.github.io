@@ -6,15 +6,18 @@ nav: true
 nav_order: 4
 ---
 
-#### Program Committee/Reviewer
-- NeurIPS 2020~2022
-- ICML 2021~2022
-- ACL 2020~2022
-- EMNLP 2020~2022
-- COLING 2020, 2022
-- AAAI 2020~2022
-- IJCAI 2020
-- Neural Networks
+#### Reviewer
+- IEEE Transactions on Medical Imaging  (TMI)
+- IEEE Transactions on Image Processing (TIP)
+- IEEE Transactions on Neural Networks and Learning Systems  (TNNLS)
+- IEEE Transactions on Industrial Informatics (TII)
+- IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE)
+- IEEE Transactions on Emerging Topics in Computational Intelligence   (TETCI)
+- Journal of Biomedical and Health Informatics (JBHI)
+- IEEE Sensors Journal
+- Medical Physics
+- International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)
+- ACM Multimedia (ACM MM)
+- IEEE International Symposium on Biomedical Imaging  (ISBI)
 
-#### Student Committee
-- Chinese Information Processing Society of China, Youth Working Committee -->
+

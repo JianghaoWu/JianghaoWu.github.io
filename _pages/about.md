@@ -2,22 +2,22 @@
 layout: about
 title: Jianghao Wu
 permalink: /
-description: <a href="http://www.cs.tsinghua.edu.cn/publish/csen/index.html/"><font color = "#3E3E3E">  </font></a> <a href="https://www.tsinghua.edu.cn/en/"><font color = "#3E3E3E">Tsinghua University</font></a> <br> <br><a href="https://www.google.com/maps/place/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6/@39.9996715,116.3242552,17z/data=!3m1!4b1!4m6!3m5!1s0x35f0541fa61e3c8f:0xd95a50fee0e0e2c9!8m2!3d39.9996674!4d116.3264439!16zL20vMGprc20"><font color = "#3E3E3E"> No 1 Qinghuayuan Street, Haidian District 100084, Beijing China </font></a><br>  <a> <i class="fa fa-envelope" style="font-size:12px;color:#BB0A21">    &nbsp;</i><a href="mailto:ningding.cs@gmail.com">ningding.cs@gmail.com</a></a>
+description: <a href="https://www.monash.edu/it"><font color = "#3E3E3E">  </font></a> <a href="https://www.monash.edu/"><font color = "#3E3E3E">Monash University</font></a> <br> <br><a href="https://www.google.com/maps/place/Woodside+Building+for+Technology+and+Design/@-37.9096154,145.1352838,902m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6ad66b7b5148f6f3:0x389a5526496c59a0!8m2!3d-37.9096154!4d145.1352838!16s%2Fg%2F11h8d4fls6?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"><font color = "#3E3E3E"> 20 Exhibition Walk, Clayton, Melbourne, Victoria 3168, Australia </font></a><br>  <a> <i class="fa fa-envelope" style="font-size:12px;color:#BB0A21">    &nbsp;</i><a href="mailto:jianghao.wu@monash.edu">jianghao.wu@monash.edu</a></a>
 
 
 
 profile:
   align: right
-  image: avatar.jpeg
+  image: wjh_pic_color.jpg
   address: 
-    <p>Tsinghua University</p>
-    <p>Beijing, China</p>
+    <p>Monash University</p>
+    <p>Melbourne, Australia</p>
     
 
  
 
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 
@@ -26,12 +26,10 @@ social: true  # includes social icons at the bottom of the page
 
 #### Bio
 
-I am a tenure-track Assistant Professor at the [Department of Electronic Engineering](https://www.ee.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/en/).
-Previously, I was a postdoc researcher in the same department, advised by Prof. Bowen Zhou.
-I received Ph.D. at the Department of Computer Science and Technology,  Tsinghua Univeristy in 2023, advised by Prof. Hai-Tao Zheng and also co-advised by Prof. Zhiyuan Liu.
+I am a PhD student at [Monash University](https://www.monash.edu/), with a Master's degree from the [University of Electronic Science and Technology of China (UESTC)](https://www.uestc.edu.cn/), where I was supervised by Prof. [Guotai Wang](https://scholar.google.com.hk/citations?user=Z2sFN4EAAAAJ&hl=en) and Prof. [Shaoting Zhang](https://scholar.google.com.hk/citations?user=oiBMWK4AAAAJ&hl=en). I am a member of [HiLab](https://hilab.uestc.edu.cn/). 
 
 
 #### Research
-My research spans the areas of natural language processing and machine learning. 
-Currently I am working on theories and *scalable* methods for developing reasoning intelligence that balances exploration and learning. I am also interested in how specialized general reasoners can facilitate scientific innovations.
+My research focus on post-training adaptation of medical AI models, ranging from lightweight deep learning networks to large-scale foundation models. My research explores domain adaptation, test-time training, and self-supervised learning to enhance the reasoning-time robustness and generalizability of visual, language, and multi-modal systems in real-world medical scenarios.
+
 
