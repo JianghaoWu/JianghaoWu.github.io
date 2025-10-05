@@ -1,24 +1,24 @@
-- username: PRIME-RL
-  repositories:
-    - TTRL
-    - PRIME
-    - ImplicitPRM
+# - username: PRIME-RL
+#   repositories:
+#     - TTRL
+#     - PRIME
+#     - ImplicitPRM
 
 
-- username: thunlp
-  repositories:
-    - UltraChat
-    - OpenPrompt
-    - OpenDelta
-    - Few-NERD
+# - username: thunlp
+#   repositories:
+#     - UltraChat
+#     - OpenPrompt
+#     - OpenDelta
+#     - Few-NERD
 
 
-- username: openbmb
-  repositories:
-    - UltraFeedback
-    - Eurus
+# - username: openbmb
+#   repositories:
+#     - UltraFeedback
+#     - Eurus
 
-- username: TsinghuaC3I
-  repositories:
-    - UltraMedical
+# - username: TsinghuaC3I
+#   repositories:
+#     - UltraMedical
 
