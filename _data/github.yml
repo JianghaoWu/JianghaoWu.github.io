@@ -1,24 +1,12 @@
-# - username: PRIME-RL
-#   repositories:
-#     - TTRL
-#     - PRIME
-#     - ImplicitPRM
+- username: HiLab-git
+  repositories:
+    - UPL-SFDA
+    - SicTTA
+    - A3-TTA
+    - FPL-plus
 
 
-# - username: thunlp
-#   repositories:
-#     - UltraChat
-#     - OpenPrompt
-#     - OpenDelta
-#     - Few-NERD
-
-
-# - username: openbmb
-#   repositories:
-#     - UltraFeedback
-#     - Eurus
-
-# - username: TsinghuaC3I
-#   repositories:
-#     - UltraMedical
-
+- username: JianghaoWu
+  repositories:
+    - SIFA-pytorch
+    - FPL-UDA
