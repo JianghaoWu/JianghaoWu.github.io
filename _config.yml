@@ -1,13 +1,13 @@
-﻿# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jianghao Wu  # the website title (if blank, full name will be used instead)
-first_name: Jianghao
+title: Ning Ding  # the website title (if blank, full name will be used instead)
+first_name: Ning
 middle_name: 
-last_name: Wu
-email: jianghao.wu@monash.edu
-repository: JianghaoWu/JianghaoWu.github.io
+last_name: Ding
+email: ningding.cs@gmail.com
+repository: ningding97/ningding97.github.io
 
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -42,12 +42,12 @@ og_image: true # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: JianghaoWu # your GitHub user name
+github_username: ningding97 # your GitHub user name
 gitlab_username:  # your GitLab user name
-# twitter_username: stingning # your Twitter handle
-linkedin_username: jianghao-wu-1499242a4 # your LinkedIn user name
-scholar_userid:  f5f1xvYAAAAJ&hl=en # your Google Scholar ID uZXQuYAAAAAJ
-orcid_id: 0000-0001-9743-9316 # your ORCID ID
+twitter_username: stingning # your Twitter handle
+linkedin_username: ning-ding-22933ba2 # your LinkedIn user name
+scholar_userid:  uZXQuYAAAAAJ&hl=zh-CN # your Google Scholar ID uZXQuYAAAAAJ
+orcid_id: 0000-0001-8758-9484 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -56,7 +56,7 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-# semanticscholar_id: 46649145
+semanticscholar_id: 46649145
 
 contact_note: >
 
@@ -142,8 +142,8 @@ github: [metadata]
 
 scholar:
 
-  last_name: Wu
-  first_name: [Jianghao, J., Jianghao*, Jianghao†]
+  last_name: Ding
+  first_name: [Ning, N., Ning*, Ning†]
 
   style: apa
   locale: en
