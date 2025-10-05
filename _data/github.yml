@@ -1,12 +1,12 @@
-# - username: HiLab-git
-#   repositories:
-#     - UPL-SFDA
-#     - SicTTA
-#     - A3-TTA
-#     - FPL-plus
+- username: HiLab-git
+  repositories:
+    - UPL-SFDA
+    - SicTTA
+    - A3-TTA
+    - FPL-plus
 
 
-# - username: JianghaoWu
-#   repositories:
-#     - SIFA-pytorch
-#     - FPL-UDA
+- username: JianghaoWu
+  repositories:
+    - SIFA-pytorch
+    - FPL-UDA
