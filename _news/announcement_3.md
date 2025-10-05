@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2024-10-06 07:59:00-0400
+date: 2019-6-23
 inline: true
-related_posts: false
 ---
 
-We won second place in the MICCAI 2024 MBH-Seg Challenge: Multi-class Brain Hemorrhage Segmentation in Non-contrast CT! 
+There includes an awesome manually annotated [Chinese relation extraction dataset](https://github.com/thunlp/Chinese_NRE/tree/master/data/FinRE) in our [ACL 2019 paper](https://www.aclweb.org/anthology/P19-1430/), welcome to use.

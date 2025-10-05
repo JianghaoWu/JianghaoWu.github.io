@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-02-03 15:59:00-0400
+date: 2021-5-21
 inline: true
-related_posts: false
 ---
 
-One paper is accepted by ISBI 2024!
+
+Check out [Few-NERD](https://ningding97.github.io/fewnerd) (to appear in ACL 2021).

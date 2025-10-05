@@ -1,133 +1,525 @@
-﻿---
 ---
-
-@String{ICLR = {International Conference on Learning Representations (ICLR)}}
-@String{NeurIPS = {Conference on Neural Information Processing Systems (NeurIPS)}}
-@String{TPAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}}
-@String{ICCV= {International Conference on Computer Vision (ICCV)}}
-@String{IJCAI = {International Joint Conference on Artificial Intelligence (IJCAI)}}
-@String{CVPR = {Conference on Computer Vision and Pattern Recognition (CVPR)}}
-@String{AAAI = {AAAI Conference on Artificial Intelligence (AAAI)}}
-@String{ECCV = {European Conference on Computer Vision (ECCV)}}
-@String{ISBI = {International Symposium on Biomedical Imaging (ISBI)}}
-@String{MICCAI = {International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)}}
-@String{TMI = {IEEE Transactions on Medical Imaging (TMI)}}
-@String{MedIA = {Medical Image Analysis (MedIA)}}
-@String{IPMI = {International Conference on Information Processing in Medical Imaging(IPMI)}}
-@String{Neurocomputing = {Neurocomputing}}
-
-@inproceedings{wu2022fpl,
-  title={FPL-UDA: Filtered pseudo label-based unsupervised cross-modality adaptation for vestibular schwannoma segmentation},
-  author={Wu, Jianghao and Gu, Ran and Dong, Guiming and Wang, Guotai and Zhang, Shaoting},
-  booktitle=ISBI,
-  pages={1--5},
-  year={2022},
-  price={Oral},
-  selected={true},
-  abbr={ISBI},
+---
+@article{preprint:entropy,
+  title={The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models},
   bibtex_show={true},
-  code={https://github.com/JianghaoWu/FPL-UDA}
+  journal={Preprint},
+  preview={entropy2.png},
+  selected={true},
+  author={Ganqu Cui and Yuchen Zhang and Jiacheng Chen and Lifan Yuan and Zhi Wang and Yuxin Zuo and Haozhan Li and Yuchen Fan and Huayu Chen and Weize Chen and Zhiyuan Liu and Hao Peng and Lei Bai and Wanli Ouyang and Yu Cheng and Bowen Zhou and Ning* Ding},
+  code={https://github.com/PRIME-RL/Entropy-Mechanism-of-RL},
+  pdf={https://arxiv.org/abs/2505.22617},
+  abstract={This paper aims to overcome a major obstacle in scaling RL for reasoning with LLMs, namely the collapse of policy entropy. Such phenomenon is consistently observed across vast RL runs without entropy intervention, where the policy entropy dropped sharply at the early training stage, this diminished exploratory ability is always accompanied with the saturation of policy performance. In practice, we establish a transformation equation R=-a*e^H+b between entropy H and downstream performance R. This empirical law strongly indicates that, the policy performance is traded from policy entropy, thus bottlenecked by its exhaustion, and the ceiling is fully predictable H=0, R=-a+b. Our finding necessitates entropy management for continuous exploration toward scaling compute for RL. To this end, we investigate entropy dynamics both theoretically and empirically. Our derivation highlights that, the change in policy entropy is driven by the covariance between action probability and the change in logits, which is proportional to its advantage when using Policy Gradient-like algorithms. Empirical study shows that, the values of covariance term and entropy differences matched exactly, supporting the theoretical conclusion. Moreover, the covariance term stays mostly positive throughout training, further explaining why policy entropy would decrease monotonically. Through understanding the mechanism behind entropy dynamics, we motivate to control entropy by restricting the update of high-covariance tokens. Specifically, we propose two simple yet effective techniques, namely Clip-Cov and KL-Cov, which clip and apply KL penalty to tokens with high covariances respectively. Experiments show that these methods encourage exploration, thus helping policy escape entropy collapse and achieve better downstream performance.},
+  year={2025}
 }
 
-@inproceedings{wu2023upl,
-  title={UPL-TTA: Uncertainty-aware pseudo label guided fully test time adaptation for fetal brain segmentation},
-  author={Wu, Jianghao and Gu, Ran and Lu, Tao and Zhang, Shaoting and Wang, Guotai},
-  booktitle=IPMI,
-  pages={237--249},
-  year={2023},
-  selected={true},
+@article{preprint:ttrl,
+  title={TTRL: Test-time Reinforcement Learning},
   bibtex_show={true},
-  arxiv={2405.14256},
-  abbr={IPMI}
+  selected={true},
+  preview={TTRL.png},
+  author={Zuo, Yuxin and Zhang, Kaiyan and Qu, Shang and Sheng, Li and Zhu, Xuekai and Qi, Biqing and Sun, Youbang and Cui, Ganqu and Ding, Ning* and Zhou, Bowen},
+  journal={Preprint},
+  code={https://github.com/PRIME-RL/TTRL},
+  pdf={https://arxiv.org/abs/2504.16084},
+  abstract={This paper investigates Reinforcement Learning (RL) on data without explicit labels for reasoning tasks in Large Language Models (LLMs). The core challenge of the problem is reward estimation during inference while not having access to ground-truth information. While this setting appears elusive, we find that common practices in Test-Time Scaling (TTS), such as majority voting, yield surprisingly effective rewards suitable for driving RL training. In this work, we introduce Test-Time Reinforcement Learning (TTRL), a novel method for training LLMs using RL on unlabeled data. TTRL enables self-evolution of LLMs by utilizing the priors in the pre-trained models. Our experiments demonstrate that TTRL consistently improves performance across a variety of tasks and models. Notably, TTRL boosts the pass@1 performance of Qwen-2.5-Math-7B by approximately 211% on the AIME 2024 with only unlabeled test data. Furthermore, although TTRL is only supervised by the maj@n metric, TTRL has demonstrated performance to consistently surpass the upper limit of the initial model maj@n, and approach the performance of models trained directly on test data with ground-truth labels. Our experimental findings validate the general effectiveness of TTRL across various tasks and highlight TTRL's potential for broader tasks and domains.},
+  year={2025}
 }
 
-@inproceedings{liu2024rpl,
-  title={RPL-SFDA: Reliable Pseudo Label-Guided Source-Free Cross-Modality Adaptation for NPC GTV Segmentation},
-  author={Liu, Xinya and Wu, Jianghao and Luo, Xiangde and Liao, Wenjun and Zhang, Shichuan and Zhang, Shaoting and Wang, Guotai},
-  booktitle=ISBI,
-  pages={1--5},
-  year={2024},
-  selected={true},
+
+@article{preprint:prime,
+  title={Process Reinforcement through Implicit Rewards},
   bibtex_show={true},
-  abbr={ISBI}
-}
-
-@article{wu2024fpl+,
-  title={FPL+: Filtered Pseudo Label-based Unsupervised Cross-Modality Adaptation for 3D Medical Image Segmentation},
-  author={Wu, Jianghao and Guo, Dong and Wang, Guotai and Yue, Qiang and Yu, Huijun and Li, Kang and Zhang, Shaoting},
-  journal=TMI,
-  year={2024},
-  volume={43},
-  number={9},
-  pages={3098-3109},
-  code={https://github.com/HiLab-git/FPL-plus},
-  arxiv={2404.04971},
-  abbr={TMI},
+  preview={prime.gif},
   selected={true},
-  bibtex_show={true}
+  author={Ganqu Cui and Lifan Yuan and Zefan Wang and Hanbin Wang and Wendi Li and Bingxiang He and Yuchen Fan and Tianyu Yu and Qixin Xu and Weize Chen and Jiarui Yuan and Huayu Chen and Kaiyan Zhang and Xingtai Lv and Shuo Wang and Yuan Yao and Xu Han and Hao Peng and Yu Cheng and Zhiyuan Liu and Maosong Sun and Bowen Zhou and Ning* Ding},
+  journal={Preprint},
+  pdf={https://arxiv.org/abs/2502.01456},
+  series = {\newlin arXiv},
+  code={https://github.com/PRIME-RL/PRIME},
+  huggingface={https://huggingface.co/PRIME-RL},
+  abstract={Dense process rewards have proven a more effective alternative to the sparse outcome-level rewards in the inference-time scaling of large language models (LLMs), particularly in tasks requiring complex multi-step reasoning. While dense rewards also offer an appealing choice for the reinforcement learning (RL) of LLMs since their fine-grained rewards have the potential to address some inherent issues of outcome rewards, such as training efficiency and credit assignment, this potential remains largely unrealized. This can be primarily attributed to the challenges of training process reward models (PRMs) online, where collecting high-quality process labels is prohibitively expensive, making them particularly vulnerable to reward hacking. To address these challenges, we propose PRIME (Process Reinforcement through IMplicit rEwards), which enables online PRM updates using only policy rollouts and outcome labels through implict process rewards. PRIME combines well with various advantage functions and forgoes the dedicated reward model training phrase that existing approaches require, substantially reducing the development overhead. We demonstrate PRIME's effectiveness on competitional math and coding. Starting from Qwen2.5-Math-7B-Base, PRIME achieves a 15.1% average improvement across several key reasoning benchmarks over the SFT model. Notably, our resulting model, Eurus-2-7B-PRIME, surpasses Qwen2.5-Math-7B-Instruct on seven reasoning benchmarks with 10% of its training data.},
+  year={Preprint}
 }
 
-@article{wu2023upl,
-  title={UPL-SFDA: Uncertainty-aware pseudo label guided source-free domain adaptation for medical image segmentation},
-  author={Wu, Jianghao and Wang, Guotai and Gu, Ran and Lu, Tao and Chen, Yinan and Zhu, Wentao and Vercauteren, Tom and Ourselin, S{\'e}bastien and Zhang, Shaoting},
-  journal=TMI,
-  year={2023},
-  volume={42},
-  number={12},
-  pages={3932-3943},
-  code={https://github.com/HiLab-git/UPL-SFDA},
-  arxiv={2309.10244},
-  abbr={TMI},
+
+@article{preprint:implicitPRM,
+  title={Free Process Rewards without Process Labels},
+  bibtex_show={true},
+  preview={implicitPRM.png},
   selected={true},
-  bibtex_show={true}
+  author={Yuan, Lifan and Li, Wendi and Chen, Huayu and Cui, Ganqu and Ding, Ning* and Zhang, Kaiyan and Zhou, Bowen and Liu, Zhiyuan and Peng, Hao},
+  journal={ICML 2025},
+  pdf={https://arxiv.org/abs/2412.01981},
+  series = {\newlin ICML 2025},
+    huggingface={https://huggingface.co/PRIME-RL},
+  code={https://github.com/lifan-yuan/ImplicitPRM},
+  abstract={Different from its counterpart outcome reward models (ORMs), which evaluate the entire responses, a process reward model (PRM) scores a reasoning trajectory step by step, providing denser and more fine grained rewards. However, training a PRM requires labels annotated at every intermediate step, presenting significant challenges for both manual and automatic data collection. This paper aims to address this challenge. Both theoretically and empirically, we show that an \textit{implicit PRM} can be obtained at no additional cost, by simply training an ORM on the cheaper response-level labels. The only assumption is to parameterize the outcome reward as the log-likelihood ratios of the policy and reference models, which can be optimized regardless of the specific choice of loss objectives. In experiments, we instantiate our implicit PRMs with various objectives and evaluate their performance on MATH. We show that our implicit PRM outperforms a strong MCTS-based baseline \textit{á la} Math-Shepherd using less than 1/38 of the training data. Its performance can be further improved with majority voting. We further find that scaling up instructions and responses benefits our implicit PRM, and the latter brings a larger gain. Particularly, we find that our implicit PRM, when instantiated with the cross-entropy (CE) loss, is more data-efficient and can keep improving generation models even when trained with only one response per instruction, the setup that suffers from extreme data scarcity and imbalance. Further, instructions should be relevant to downstream tasks while the diversity of responses does not bring gains. Surprisingly, training on extra Math-Shepherd step labels brings no further improvements to our implicit PRM trained on only outcome data. We hope that our work will encourage a rethinking of PRM training approaches and contribute to making training PRMs more accessible.},
+  year={Preprint}
 }
 
-@article{wu2023tiss,
-  title={TISS-net: Brain tumor image synthesis and segmentation using cascaded dual-task networks and error-prediction consistency},
-  author={Wu, Jianghao and Guo, Dong and Wang, Lu and Yang, Shuojue and Zheng, Yuanjie and Shapey, Jonathan and Vercauteren, Tom and Bisdas, Sotirios and Bradford, Robert and Saeed, Shakeel and others},
-  journal=Neurocomputing,
-  volume={544},
-  pages={126295},
-  year={2023},
-  abbr={Neurocomputing},
-  selected={true},
-  bibtex_show={true}
-}
-
-@article{xu2023novel,
-  title={A novel one-to-multiple unsupervised domain adaptation framework for abdominal organ segmentation},
-  author={Xu, Xiaowei and Chen, Yinan and Wu, Jianghao and Lu, Jiangshan and Ye, Yuxiang and Huang, Yechong and Dou, Xin and Li, Kang and Wang, Guotai and Zhang, Shaoting and others},
-  journal=MedIA,
-  volume={88},
-  pages={102873},
-  year={2023},
-  abbr={MedIA},
-  selected={true},
-  bibtex_show={true}
-}
-
-
-@article{dorent2023crossmoda,
-  title={CrossMoDA 2021 challenge: Benchmark of cross-modality domain adaptation techniques for vestibular schwannoma and cochlea segmentation},
-  author={Dorent, Reuben and Kujawa, Aaron and Ivory, Marina and Bakas, Spyridon and Rieke, Nicola and Joutard, Samuel and Glocker, Ben and Cardoso, Jorge and Modat, Marc and Batmanghelich, Kayhan and others},
-  journal={Medical Image Analysis},
-  volume={83},
-  pages={102628},
-  year={2023},
-  abbr={MedIA},
+@article{preprint:tool_learning,
+  title={Tool Learning with Foundation Models},
+  bibtex_show={true},
+  author={Qin,Yujia and Hu, Shengding and Lin,Yankai and  Chen,Weize and  Ding,Ning and Cui,Ganqu and  Zeng,Zheni and  Huang,Yufei and Xiao,Chaojun and  Han,Chi and  Fung,Yi Ren and  Su,Yusheng and  Wang, Huadong and {et al.}},
+  journal={Preprint},
   selected={false},
-  bibtex_show={true}
+  pdf={https://arxiv.org/abs/2304.08354},
+  series = {\newlin arXiv},
+  code={https://github.com/OpenBMB/BMTools/tree/main/bmtools},
+  year={Preprint}
 }
 
-@article{wang2023mis,
-  title={MIS-FM: 3d medical image segmentation using foundation models pretrained on a large-scale unannotated dataset},
-  author={Wang, Guotai and Wu, Jianghao and Luo, Xiangde and Liu, Xinglong and Li, Kang and Zhang, Shaoting},
-  journal={arXiv preprint arXiv:2306.16925},
-  year={2023},
- arXiv={2306.16925},
-  selected={true},
-  abbr={arXiv},
+
+
+@article{2023:delta,
+  title={Parameter-efficient Fine-tuning of Large-scale Pre-trained Language Models},
+  titleb={Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models},
+  preview={NMI.jpg},
   bibtex_show={true},
-  code={https://github.com/openmedlab/MIS-FM}
+  abbr={Nat.  <br>Mach. <br>Intell.},
+  code={https://github.com/thunlp/OpenDelta},
+  author={Ding, Ning and Qin, Yujia and Yang, Guang and Wei, Fuchao and Yang, Zonghan and Su, Yusheng and Hu, Shengding and Chen, Yulin and Chan, Chi-Min and Chen, Weize and Yi, Jing and Zhao, Weilin and Liu, Zhiyuan and Zheng, Hai-Tao and Chen, Jianfei and Liu, Yang and Tang, Jie and Li, Juanzi and Sun, Maosong},
+  journal={Nature Machine Intelligence},
+  selected={true},
+  abstract={As pre-trained language models (PLMs) have become the fundamental infrastructure for various NLP tasks and researchers have readily enjoyed themselves in the pretrainingfinetuning paradigm, evidence from emerging research has continuously proven that larger models tend to yield better performance. However, despite the welcome outcome, the process of fine-tuning large-scale PLMs brings prohibitive adaptation costs. In fact, finetuning all the parameters of a colossal model and retaining separate instances for different tasks are practically infeasible. This necessitates a new branch of research focusing on the parameter-efficient adaptation of PLMs. In order to unleash the imagination of the possible advantages of such methods, not limited to parameter efficiency, we coined a new term delta tuning from a morphological point of view to refer to the original “parameter efficient tuning”. In contrast with the standard fine-tuning, delta tuning only fine-tunes a small portion of the model parameters while keeping the rest untouched, largely reducing both the computation and storage costs. Recent studies have demonstrated that a series of delta tuning methods with distinct tuned parameter selection could achieve performance on a par with full-parameter fine-tuning, suggesting a new promising way of stimulating large-scale PLMs. In this paper, we first formally describe the problem of delta tuning and then comprehensively review recent delta tuning approaches. We also propose a unified categorization criterion that divides existing delta tuning methods into three groups: addition-based, specification-based, and reparameterization-based methods. Though initially proposed as an efficient method to steer large models, we believe that some of the fascinating evidence discovered along with delta tuning could help further reveal the mechanisms of PLMs and even deep neural networks. To this end, we discuss the theoretical principles underlying the effectiveness of delta tuning and propose frameworks to interpret delta tuning from the perspective of optimization and optimal control, respectively. Furthermore, we provide a holistic empirical study of representative methods, where results on over 100 NLP tasks demonstrate a comprehensive performance comparison of different approaches. The experimental results also cover the analysis of combinatorial, scaling and transferable properties of delta tuning. To facilitate the research of delta tuning, we are also developing an open-source toolkit, OpenDelta , that enables practitioners to efficiently and flexibly implement delta tuning on PLMs. At last, we discuss a series of real-world applications of delta tuning.},
+  arxiv={2203.06904},
+  html={https://www.nature.com/articles/s42256-023-00626-4},
+  pdf={https://www.nature.com/articles/s42256-023-00626-4},
+  award={  <br> <font color="BB0A21">  Cover Article of Nature Machine Intelligence's March Issue  </font></strong> <br>   <font color="BB0A21">  World Artificial Intelligence Conference Youth Outstanding Paper Award  </font> },
+  series = {\newlin Nature Machine Intelligence},
+  year={2023}
 }
+
+
+@inproceedings{ding2021openprompt,
+      preview={op.png},
+      bibtex_show={true},
+      title={ OpenPrompt: An Open-source Framework for Prompt-learning}, 
+      author={Ding, Ning and Hu, Shengding and Zhao, Weilin and Chen, Yulin and Liu, Zhiyuan and Zheng, Hai-Tao and Sun, Maosong},
+      year={2022},
+      bibtex_show={true},
+      selected={true},
+      booktitle={ACL System Demonstration},
+      series = {\newlin ACL System Demonstration},
+      html={https://arxiv.org/abs/2111.01998},
+      pdf={https://arxiv.org/pdf/2111.01998.pdf},
+      code={https://github.com/thunlp/OpenPrompt},
+      award={ <br> <img src="/assets/img/award.png" width="15px">   <font color="BB0A21">  Best Demo Paper Award  </font>},
+      abstract={Prompt-learning has become a new paradigm in modern natural language processing, which directly adapts pre-trained language models (PLMs) to cloze-style prediction, autoregressive modeling, or sequence to sequence generation, resulting in promising performances on various tasks. However, no standard implementation framework of prompt-learning is proposed yet, and most existing prompt-learning codebases, often unregulated, only provide limited implementations for specific scenarios. Since there are many details such as templating strategy, initializing strategy, and verbalizing strategy, etc. need to be considered in prompt-learning, practitioners face impediments to quickly adapting the desired prompt learning methods to their applications. In this paper, we present {OpenPrompt}, a unified easy-to-use toolkit to conduct prompt-learning over PLMs. OpenPrompt is a research-friendly framework that is equipped with efficiency, modularity, and extendibility, and its combinability allows the freedom to combine different PLMs, task formats, and prompting modules in a unified paradigm. Users could expediently deploy prompt-learning frameworks and evaluate the generalization of them on different NLP tasks without constraints.}
+}
+
+
+@inproceedings{preprint:ultra,
+  title={Enhancing Chat Language Models by Scaling High-quality Instructional Conversations},
+  preview={ultra_logo.png},
+  bibtex_show={true},
+  author={Ding, Ning and Chen, Yulin and Xu, Bokai and Qin, Yujia and Hu, Shengding and Liu, Zhiyuan and Sun, Maosong and Zhou, Bowen},
+  booktitle={EMNLP},
+  selected={true},
+  pdf={https://arxiv.org/abs/2305.14233},
+  code={https://github.com/thunlp/UltraChat},
+  series = {\newlin EMNLP},
+  abstract={Fine-tuning on instruction data has been widely validated as an effective practice for implementing chat language models like ChatGPT. Scaling the diversity and quality of such data, although straightforward, stands a great chance of leading to improved performance. This paper aims to improve the upper bound of open-source models further. We first provide a systematically designed, diverse, informative, large-scale dataset of instructional conversations, UltraChat, which does not involve human queries. Our objective is to capture the breadth of interactions that a human might have with an AI assistant and employs a comprehensive framework to generate multi-turn conversation iteratively. UltraChat contains 1.5 million high-quality multi-turn dialogues and covers a wide range of topics and instructions. Our statistical analysis of UltraChat reveals its superiority in various key metrics, including scale, average length, diversity, coherence, etc., solidifying its position as a leading open-source dataset. Building upon UltraChat, we fine-tune a LLaMA model to create a powerful conversational model, UltraLLaMA. Our evaluations indicate that UltraLLaMA consistently outperforms other open-source models, including Vicuna, the previously recognized state-of-the-art open-source model.},
+  award={ <br>   The Ultra series solutions also contain other works like <a href="https://arxiv.org/abs/2310.01377">UltraFeedback (ICML 2024)</a>  </font></strong> , <a href="https://arxiv.org/abs/2404.02078">UltraInteract (ICLR 2024)</a>  </font></strong>  , <a href="https://arxiv.org/abs/2406.03949">UltraMedical (NeurIPS 2024)</a>  </font></strong>, etc.  </strong>},
+  year={2023}
+}
+
+@inproceedings{Cui2023UltraFeedbackBL,
+  preview={uf.jpg},
+  title={UltraFeedback: Boosting Language Models with Scaled AI Feedback},
+  author={Ganqu Cui and Lifan Yuan and Ning Ding and Guanming Yao and Bingxiang He and Wei Zhu and Yuan Ni and Guotong Xie and Ruobing Xie and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+  selected={false},
+  booktitle={ICML},
+  year={2024},
+    series = {\newlin ICML},
+  url={https://api.semanticscholar.org/CorpusID:271217791}
+}
+
+@inproceedings{preprint:sora,
+  title={Sparse Low-rank Adaptation of Pre-trained Language Models},
+  preview={sora.png},
+  selected={true},
+  bibtex_show={true},
+  author={Ding, Ning and Chen, Yulin and Xu, Bokai and Qin, Yujia and Hu, Shengding and Liu, Zhiyuan and Sun, Maosong and Zhou, Bowen},
+  pdf={https://arxiv.org/abs/2311.11696},
+  booktitle={EMNLP},
+  selected={true},
+  series = {\newlin EMNLP},
+  code={https://github.com/TsinghuaC3I/SoRA},
+  abstract={Fine-tuning pre-trained large language models in a parameter-efficient manner is widely studied for its effectiveness and efficiency. The popular method of low-rank adaptation (LoRA) offers a notable approach, hypothesizing that the adaptation process is intrinsically low-dimensional. Although LoRA has demonstrated commendable performance, it is implemented with a fixed and unalterable intrinsic rank that might not always be the ideal choice. Recognizing the need for more flexible adaptation, we extend the methodology of LoRA to an innovative approach we call sparse low-rank adaptation (SoRA) that enables dynamic adjustments to the intrinsic rank during the adaptation process. We achieve this through the incorporation of a gate unit optimized with proximal gradient method in the training stage, controlling the cardinality of rank under the sparsity of the gate. In the subsequent inference stage, we eliminate the parameter blocks corresponding to the zeroed-out ranks, to reduce each SoRA module back to a concise yet rank-optimal LoRA. Our approach strengthens the representation power of LoRA by initializing it with a higher rank, while efficiently taming a temporarily increased number of parameters via updating in a sparse way. We further introduce a sparsifying scheduler for SoRA, aiming to examine the impact of the number of non-zero parameters on the model's memorization and generalization. Our experimental results demonstrate that SoRA can outperform other baselines even with 70% retained parameters and 70% training time.},
+  year={2023}
+}
+
+
+@inproceedings{yuan2024advancing,
+  title={Advancing llm reasoning generalists with preference trees},
+  selected={false},
+  preview={ui.jpg},
+  author={Yuan, Lifan and Cui, Ganqu and Wang, Hanbin and Ding, Ning and Wang, Xingyao and Deng, Jia and Shan, Boji and Chen, Huimin and Xie, Ruobing and Lin, Yankai and others},
+  booktitle={Preprint},
+  year={2024}
+}
+
+
+@inproceedings{2023:lottery,
+  title={Exploring Lottery Prompts for Pre-trained Language Models},
+  author={Chen,Yulin* and Ding, Ning* and Wang,Xiaobin and Hu,Shengding and Zheng, Hai-Tao and Liu, Zhiyuan and Xie,Pengjun},
+  booktitle={ACL},
+  selected={false},
+  series = {\newlin ACL},
+  pdf={https://arxiv.org/pdf/2305.19500.pdf},
+  bibtex_show={true},
+  year={2023}
+}
+
+@inproceedings{2023:opendelta,
+  title={OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models},
+  author={Hu,Shengding and Ding, Ning and Zhao,Weilin and Lv,Xingtai and Zhang, Zhen and Liu, Zhiyuan and Sun, Maosong},
+  booktitle={ACL System Demonstration},
+  selected={false},
+  series = {\newlin ACL System Demonstration},
+  pdf={https://arxiv.org/abs/2307.03084},
+  code={https://github.com/thunlp/OpenDelta},
+  bibtex_show={true},
+  year={2023}
+}
+
+
+@inproceedings{2023:hyper,
+  title={Few-shot Classification with Hypersphere Modeling of Prototypes},
+  bibtex_show={true},
+  author={Ding,Ning, and Chen,Yulin and Cui,Ganqu and Wang,Xiaobin and Zheng,Hai-Tao and Liu,Zhiyuan and Xie, Pengjun},
+  booktitle={ACL Findings},
+  selected={false},
+  abstract={Metric-based meta-learning is one of the de facto standards in few-shot learning. It composes of representation learning and metrics calculation designs. Previous works construct class representations in different ways, varying from mean output embedding to covariance and distributions. However, using embeddings in space lacks expressivity and cannot capture class information robustly, while statistical complex modeling poses difﬁculty to metric designs. In this work, we use tensor ﬁelds (“areas”) to model classes from the geometrical perspective for few-shot learning. We present a simple and effective method, dubbed as hypersphere prototypes ( HyperProto ), where class information is represented by hyperspheres with dynamic sizes with two sets of learnable parameters: the hypersphere’s center and the radius. Extending from points to areas, hyperspheres are much more expressive than embeddings. Moreover, it is more convenient to perform metric-based classiﬁcation with hypersphere prototypes than statistical modeling, as we only need to calculate the distance from a data point to the surface of the hypersphere. Following this idea, we also develop two variants of prototypes under other measurements. Extensive experiments and analysis on few-shot learning tasks across NLP and CV and comparison with 20+ competitive baselines demonstrate the effectiveness of our approach.},
+  pdf={https://arxiv.org/pdf/2211.05319.pdf},
+  series = {\newlin ACL Findings},
+  year={2023}
+}
+
+
+@inproceedings{2023:deltasearch,
+  title={Parameter-efficient Weight Ensembling Facilitates Task-level Knowledge Transfer},
+  author={Lv*,Xingtai and Ding*, Ning and Qin,Yujia and Liu,Zhiyuan and Sun, Maosong},
+  booktitle={ACL Short},
+  selected={false},
+  series = {\newlin ACL Short},
+  pdf={https://aclanthology.org/2023.acl-short.24.pdf},
+  bibtex_show={true},
+  year={2023}
+}
+
+
+
+
+
+
+
+@inproceedings{ding2021prompt,
+      title={Prompt-Learning for Fine-Grained Entity Typing}, 
+      author={Ding, Ning and Chen, Yulin and Han, Xu and Xu, Guangwei and Xie, Pengjun and Zheng, Hai-Tao and Liu, Zhiyuan and Li, Juanzi and Kim Hong-Gee},
+      year={2022},
+      booktitle={EMNLP Findings},
+      bibtex_show={true},
+      series = {\newlin EMNLP Findings},
+      code={https://github.com/thunlp/OpenPrompt},
+      html={https://arxiv.org/pdf/2108.10604v1.pdf},
+      pdf={https://arxiv.org/pdf/2108.10604v1.pdf},
+      abstract={As an effective approach to tune pre-trained language models (PLMs) for specific tasks, prompt-learning has recently attracted much attention from researchers. By using \textit{cloze}-style language prompts to stimulate the versatile knowledge of PLMs, prompt-learning can achieve promising results on a series of NLP tasks, such as natural language inference, sentiment classification, and knowledge probing. In this work, we investigate the application of prompt-learning on fine-grained entity typing in fully supervised, few-shot and zero-shot scenarios. We first develop a simple and effective prompt-learning pipeline by constructing entity-oriented verbalizers and templates and conducting masked language modeling. Further, to tackle the zero-shot regime, we propose a self-supervised strategy that carries out distribution-level optimization in prompt-learning to automatically summarize the information of entity types. Extensive experiments on three fine-grained entity typing benchmarks (with up to 86 classes) under fully supervised, few-shot and zero-shot settings show that prompt-learning methods significantly outperform fine-tuning baselines, especially when the training data is insufficient. }
+}
+
+@inproceedings{han2021ptr,
+  title={PTR: Prompt Tuning with Rules for Text Classification},
+  author={Han, Xu and Zhao, Weilin and Ding, Ning and Liu, Zhiyuan and Sun, Maosong},
+  booktitle={AI Open},
+  code={https://github.com/thunlp/PTR},
+  series = {\newlin AI Open},
+  bibtex_show={true},
+  abstract={Fine-tuned pre-trained language models (PLMs) have achieved awesome performance on almost all NLP tasks. By using additional prompts to fine-tune PLMs, we can further stimulate the rich knowledge distributed in PLMs to better serve downstream task. Prompt tuning has achieved promising results on some few-class classification tasks such as sentiment classification and natural language inference. However, manually designing lots of language prompts is cumbersome and fallible. For those auto-generated prompts, it is also expensive and time-consuming to verify their effectiveness in non-few-shot scenarios. Hence, it is challenging for prompt tuning to address many-class classification tasks. To this end, we propose prompt tuning with rules (PTR) for many-class text classi- fication, and apply logic rules to construct prompts with several sub-prompts. In this way, PTR is able to encode prior knowledge of each class into prompt tuning. We conduct experiments on relation classification, a typical many-class classification task, and the results on benchmarks show that PTR can significantly and consistently outperform existing state-of-the-art baselines. This indicates that PTR is a promising approach to take advantage of PLMs for those complicated classification tasks.},
+  html={https://arxiv.org/abs/2105.11259},
+  pdf={https://arxiv.org/pdf/2105.11259.pdf},
+  year={2022}
+}
+
+@inproceedings{hu2022sparse,
+  title={Sparse Structure Search for Parameter-Efficient Tuning},
+  author={Hu, Shengding and Zhang, Zhen and Ding, Ning and Wang, Yadao and Wang, Yasheng and Liu, Zhiyuan and Sun, Maosong},
+  booktitle={NeurIPS},
+  bibtex_show={true},
+  series = {\newlin NeurIPS},
+  abstract={Adapting large pre-trained models (PTMs) through fine-tuning imposes prohibitive computational and storage burdens. Recent studies of parameter-efficient tuning (PET) find that only optimizing a small portion of parameters conditioned on PTMs could yield on-par performance compared to conventional fine-tuning. Generally, PET methods exquisitely design parameter-efficient modules (PET modules) which could be applied to arbitrary fine-grained positions inside PTMs. However, the effectiveness of these fine-grained positions largely relies on sophisticated manual designation, thereby usually producing sub-optimal results. In contrast to the manual designation, we explore constructing PET modules in an automatic manner. We automatically \textbf{S}earch for the \textbf{S}parse \textbf{S}tructure of \textbf{P}arameter-\textbf{E}fficient \textbf{T}uning (S3PET). Based on a unified framework of various PET methods, S3PET conducts the differentiable PET structure search through bi-level optimization and proposes shifted global sigmoid method to explicitly control the number of trainable parameters. Extensive experiments show that S3PET surpasses manual and random structures with less trainable parameters. The searched structures preserve more than 99\% fine-tuning performance with 0.01\% trainable parameters. Moreover, the advantage of S3PET is amplified with extremely low trainable parameters budgets (0.0009\%∼0.01\%). The searched structures are transferable and explainable, providing suggestions and guidance for the future design of PET methods.},
+  html={https://arxiv.org/abs/2206.07382},
+  pdf={https://arxiv.org/abs/2206.07382},
+  year={2022}
+}
+
+
+
+@article{qin2021exploring,
+  title={Exploring Low-dimensional Intrinsic Task Subspace via Prompt Tuning},
+  author={Qin, Yujia and Wang, Xiaozhi and Su, Yusheng and Lin, Yankai and Ding, Ning and Liu, Zhiyuan and Li, Juanzi and Hou, Lei and Li, Peng and Sun, Maosong and others},
+  year={Preprint},
+  journal={Preprint},
+  series = {\newlin arXiv},
+  bibtex_show={true},
+  pdf={https://arxiv.org/abs/2110.07867},
+  code={https://github.com/thunlp/Intrinsic-Prompt-Tuning},
+  abstract={Why can pre-trained language models (PLMs) learn universal representations and effectively adapt to broad NLP tasks differing a lot superficially? In this work, we empirically find evidence indicating that the adaptations of PLMs to various few-shot tasks can be reparameterized as optimizing only a few free parameters in a unified low-dimensional intrinsic task subspace, which may help us understand why PLMs could easily adapt to various NLP tasks with small-scale data. To find such a subspace and examine its universality, we propose an analysis pipeline called intrinsic prompt tuning (IPT). Specifically, we resort to the recent success of prompt tuning and decompose the soft prompts of multiple NLP tasks into the same low-dimensional nonlinear subspace, then we learn to adapt the PLM to unseen data or tasks by only tuning parameters in this subspace. In the experiments, we study diverse few-shot NLP tasks and surprisingly find that in a 250-dimensional subspace found with 100 tasks, by only tuning 250 free parameters, we can recover 97% and 83% of the full prompt tuning performance for 100 seen tasks (using different training data) and 20 unseen tasks, respectively, showing great generalization ability of the found intrinsic task subspace. Besides being an analysis tool, IPT could further bring practical benefits, such as improving the prompt tuning stability.}
+}
+
+
+@inproceedings{hu2021knowledgeable,
+      title={Knowledgeable Prompt-tuning: Incorporating Knowledge into Prompt Verbalizer for Text Classification}, 
+      author={Hu, Shengding and Ding, Ning and Wang, Huadong and Liu, Zhiyuan and Li, Juanzi and Sun, Maosong},
+      year={2022},
+      booktitle={ACL},
+      series = {\newlin ACL},
+      bibtex_show={true},
+      award={ <br>  <font color="BB0A21">  Oral Presentation  </font>},
+      code={https://github.com/thunlp/KnowledgeablePromptTuning},
+      html={https://arxiv.org/abs/2108.02035},
+      pdf={https://arxiv.org/pdf/2108.02035.pdf},
+      abstract={Tuning pre-trained language models (PLMs) with task-specific prompts has been a promising approach for text classification. Particularly, previous studies suggest that prompt-tuning has remarkable superiority in the low-data scenario over the generic fine-tuning methods with extra classifiers. The core idea of prompt-tuning is to insert text pieces, i.e., template, to the input and transform a classification problem into a masked language modeling problem, where a crucial step is to construct a projection, i.e., verbalizer, between a label space and a label word space. A verbalizer is usually handcrafted or searched by gradient descent, which may lack coverage and bring considerable bias and high variances to the results. In this work, we focus on incorporating external knowledge into the verbalizer, forming a knowledgeable prompt-tuning (KPT), to improve and stabilize prompt-tuning. Specifically, we expand the label word space of the verbalizer using external knowledge bases (KBs) and refine the expanded label word space with the PLM itself before predicting with the expanded label word space. Extensive experiments on zero and few-shot text classification tasks demonstrate the effectiveness of knowledgeable prompt-tuning.}
+}
+
+@inproceedings{cui-etal-2022-prototypical,
+    title = "Prototypical Verbalizer for Prompt-based Few-shot Tuning",
+    author = "Cui, Ganqu  and
+      Hu, Shengding  and
+      Ding, Ning  and
+      Huang, Longtao  and
+      Liu, Zhiyuan",
+    booktitle = " ACL",
+    code={https://github.com/thunlp/OpenPrompt},
+    month = may,
+    series = {\newlin ACL},
+    bibtex_show={true},
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.483",
+    pdf = "https://aclanthology.org/2022.acl-long.483",
+    doi = "10.18653/v1/2022.acl-long.483",
+    pages = "7014--7024",
+    abstract = "Prompt-based tuning for pre-trained language models (PLMs) has shown its effectiveness in few-shot learning. Typically, prompt-based tuning wraps the input text into a cloze question. To make predictions, the model maps the output words to labels via a verbalizer, which is either manually designed or automatically built. However, manual verbalizers heavily depend on domain-specific prior knowledge and human efforts, while finding appropriate label words automatically still remains challenging.In this work, we propose the prototypical verbalizer (ProtoVerb) which is built directly from training data. Specifically, ProtoVerb learns prototype vectors as verbalizers by contrastive learning. In this way, the prototypes summarize training instances and are able to enclose rich class-level semantics. We conduct experiments on both topic classification and entity typing tasks, and the results demonstrate that ProtoVerb significantly outperforms current automatic verbalizers, especially when training data is extremely scarce. More surprisingly, ProtoVerb consistently boosts prompt-based tuning even on untuned PLMs, indicating an elegant non-tuning way to utilize PLMs. Our codes are avaliable at https://github.com/thunlp/OpenPrompt.",
+}
+
+
+@inproceedings{zhong2022proqa,
+  title={ProQA: Structural Prompt-based Pre-training for Unified Question Answering},
+  author={Zhong, Wanjun and  Gao, Yifan and Ding, Ning and  Qin, Yujia and  Liu, Zhiyuan and  Zhou, Ming and  Wang, Jiahai and  Yin, Jian and  Duan, Nan},
+  booktitle={NAACL},
+  year={2022},
+  series = {\newlin NAACL},
+  bibtex_show={true},
+  code={https://github.com/zhongwanjun/ProQA},
+  pdf={https://arxiv.org/abs/2205.04040},
+  abstract={Question Answering (QA) is a longstanding challenge in natural language processing. Existing QA works mostly focus on specific question types, knowledge domains, or reasoning skills. The specialty in QA research hinders systems from modeling commonalities between tasks and generalization for wider applications. To address this issue, we present ProQA, a unified QA paradigm that solves various tasks through a single model. ProQA takes a unified structural prompt as the bridge and improves the QA-centric ability by structural prompt-based pre-training. Through a structurally designed prompt-based input schema, ProQA concurrently models the knowledge generalization for all QA tasks while keeping the knowledge customization for every specific QA task. Furthermore, ProQA is pre-trained with structural prompt-formatted large-scale synthesized corpus, which empowers the model with the commonly-required QA ability. Experimental results on 11 QA benchmarks demonstrate that ProQA consistently boosts performance on both full data fine-tuning, few-shot learning, and zero-shot testing scenarios. Furthermore, ProQA exhibits strong ability in both continual learning and transfer learning by taking the advantages of the structural prompt.}
+
+}
+
+
+
+@inproceedings{ding2021few,
+  preview={few-nerd-heat.png},
+  title={Few-NERD: A Few-shot Named Entity Recognition Dataset},
+  author={Ding, Ning and Xu, Guangwei and Chen, Yulin and Wang, Xiaobin and Han, Xu and Xie, Pengjun and Zheng, Hai-Tao and Liu, Zhiyuan},
+  booktitle={ACL},
+  series = {\newlin ACL},
+  bibtex_show={true},
+  award={ <br>   <font color="BB0A21">  Oral Presentation  </font>},
+  selected={false},
+  abstract={Recently, considerable literature has grown up around the theme of few-shot named entity recognition (NER), but little published benchmark data specifically focused on the practical and challenging task. Current approaches collect existing supervised NER datasets and re-organize them to the few-shot setting for empirical study. These strategies conventionally aim to recognize coarse-grained entity types with few examples, while in practice, most unseen entity types are fine-grained. In this paper, we present \textsc{Few-NERD}, a large-scale human-annotated few-shot NER dataset with a hierarchy of 8 coarse-grained and 66 fine-grained entity types. \textsc{Few-NERD} consists of 188,238 sentences from Wikipedia, 4,601,160 words are included and each is annotated as context or a part of a two-level entity type.  To the best of our knowledge, this is the first few-shot NER dataset and the largest human-crafted NER dataset.  We construct benchmark tasks with different emphases to comprehensively assess the generalization capability of models. Extensive empirical results and analysis show that\textsc{Few-NERD} is challenging and the problem requires further research. We make \textsc{Few-NERD} public at https://ningding97.github.io/fewnerd/ },
+  html={https://ningding97.github.io/fewnerd/},
+  pdf={https://arxiv.org/pdf/2105.07464.pdf},
+  code={https://github.com/thunlp/Few-NERD},
+  year={2021}
+}
+
+@inproceedings{wang2021cline,
+  title={CLINE: Contrastive Learning with Semantic Negative Examples for Natural Language Understanding},
+  bibtex_show={true},
+  author={Wang, Dong and Ding, Ning* and Li, Piji and Zheng, Hai-Tao},
+  booktitle={ ACL},
+  series = {\newlin ACL},
+  award={ <br>   <font color="BB0A21">  Oral Presentation  </font>},
+  html={https://arxiv.org/abs/2107.00440},
+  pdf={https://arxiv.org/pdf/2107.00440.pdf},
+  code={https://github.com/kandorm/CLINE},
+  year={2021}
+}
+
+@inproceedings{han2021pre,
+  title={Pre-Trained Models: Past, Present and Future},
+  author={Han, Xu* and Zhang, Zhengyan* and Ding, Ning* and Gu, Yuxian* and Liu, Xiao* and Huo, Yuqi* and Qiu, Jiezhong and Zhang, Liang and Han, Wentao and Huang, Minlie and Jin, Qin and Lan, Yanyan and Liu, Yang and Liu, Zhiyuan and Lu, Zhiwu and Qiu, Xipeng and Song, Ruihua and Tang, Jie and Wen, Ji-Rong and Yuan, Jinhui and Zhao, Wayne Xin and Zhu Jun},
+  booktitle={AI Open},
+  bibtex_show={true},
+  series = {\newlin AI Open},
+  abstract={Large-scale pre-trained models (PTMs) such as BERT and GPT have recently achieved great success and become a milestone in the field of artificial intelligence (AI). Owing to sophisticated pre-training objectives and huge model parameters, large-scale PTMs can ef- fectively capture knowledge from massive la- beled and unlabeled data. By storing knowl- edge into huge parameters and fine-tuning on specific tasks, the rich knowledge implicitly encoded in huge parameters can benefit a vari- ety of downstream tasks, which has been exten- sively demonstrated via experimental verifica- tion and empirical analysis. It is now the con- sensus of the AI community to adopt PTMs as backbone for downstream tasks rather than learning models from scratch. In this paper, we take a deep look into the history of pre- training, especially its special relation with transfer learning and self-supervised learning, to reveal the crucial position of PTMs in the AI development spectrum. Further, we compre- hensively review the latest breakthroughs of PTMs. These breakthroughs are driven by the surge of computational power and the increas- ing availability of data, towards four impor- tant directions: designing effective architec- tures, utilizing rich contexts, improving com- putational efficiency, and conducting interpre- tation and theoretical analysis. Finally, we dis- cuss a series of open problems and research directions of PTMs, and hope our view can in- spire and advance the future study of PTMs.},
+  html={https://arxiv.org/abs/2106.07139},
+  pdf={https://arxiv.org/pdf/2106.07139.pdf},
+  year={2021}
+}
+
+
+
+
+@inproceedings{
+  ding2021prototypical,
+  preview={proto.png},
+  title={Prototypical Representation Learning for Relation Extraction},
+  author={Ning Ding and Xiaobin Wang and Yao Fu and Guangwei Xu and Rui Wang and Pengjun Xie and Ying Shen and Fei Huang and Hai-Tao Zheng and Rui Zhang},
+  booktitle={International Conference on Learning Representations, <br>  ICLR},
+  year={2021},
+  bibtex_show={true},
+  series = {\newlin ICLR},
+  selected={false},
+  abstract={Recognizing relations between entities is a pivotal task of relational learning. Learning relation representations from distantly-labeled datasets is difficult because of the abundant label noise and complicated expressions in human language. This paper aims to learn predictive, interpretable, and robust relation representations from distantly-labeled data that are effective in different settings, including supervised, distantly supervised, and few-shot learning. Instead of solely relying on the supervision from noisy labels, we propose to learn prototypes for each relation from contextual information to best explore the intrinsic semantics of relations. Prototypes are representations in the feature space abstracting the essential semantics of relations between entities in sentences. We learn prototypes based on objectives with clear geometric interpretation, where the prototypes are unit vectors uniformly dispersed in a unit ball, and statement embeddings are centered at the end of their corresponding prototype vectors on the surface of the ball. This approach allows us to learn meaningful, interpretable prototypes for the final classification. Results on several relation learning tasks show that our model significantly outperforms the previous state-of-the-art models. We further demonstrate the robustness of the encoder and the interpretability of prototypes with extensive experiments.},
+  html={https://openreview.net/forum?id=aCgLmfhIy_f},
+  pdf={https://openreview.net/forum?id=aCgLmfhIy_f},
+  code={https://github.com/Alibaba-NLP/ProtoRE}
+}
+
+@inproceedings{ding2020coupling,
+  title={Coupling Distant Annotation and Adversarial Training for Cross-Domain Chinese Word Segmentation},
+  author={Ding, Ning and Long, Dingkun and Xu, Guangwei and Zhu, Muhua and Xie, Pengjun and Wang, Xiaobin and Zheng, Hai-Tao},
+  booktitle={ ACL},
+  pages={6662--6671},
+  series = {\newlin ACL},
+  year={2020},
+  bibtex_show={true},
+  award={ <br>   <font color="BB0A21">  Oral Presentation  </font>},
+  html = {https://www.aclweb.org/anthology/2020.acl-main.595/},
+  abstract = {Fully supervised neural approaches have achieved significant progress in the task of Chinese word segmentation (CWS). Nevertheless, the performance of supervised models always drops gravely if the domain shifts due to the distribution gap across domains and the out of vocabulary (OOV) problem. In order to simultaneously alleviate the issues, this paper intuitively couples distant annotation and adversarial training for cross-domain CWS. 1) We rethink the essence of “Chinese words” and design an automatic distant annotation mechanism, which does not need any supervision or pre-defined dictionaries on the target domain. The method could effectively explore domain-specific words and distantly annotate the raw texts for the target domain. 2) We further develop a sentence-level adversarial training procedure to perform noise reduction and maximum utilization of the source domain information. Experiments on multiple real-world datasets across various domains show the superiority and robustness of our model, significantly outperforming previous state-of-the-arts cross-domain CWS methods.},
+  code = {https://github.com/Alibaba-NLP/DAAT-CWS},
+  pdf = {https://www.aclweb.org/anthology/2020.acl-main.595/}
+}
+
+@inproceedings{zhou-etal-2020-hierarchy,
+    title = "Hierarchy-Aware Global Model for Hierarchical Text Classification",
+    author = "Zhou, Jie  and
+      Ma, Chunping  and
+      Long, Dingkun  and
+      Xu, Guangwei  and
+      Ding, Ning  and
+      Zhang, Haoyu  and
+      Xie, Pengjun  and
+      Liu, Gongshen",
+    booktitle = "ACL",
+    month = jul,
+    year = "2020",
+    bibtex_show={true},
+    series = {\newlin ACL},
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    html = "https://www.aclweb.org/anthology/2020.acl-main.104",
+    doi = "10.18653/v1/2020.acl-main.104",
+    pages = "1106--1117",
+    abstract = "Hierarchical text classification is an essential yet challenging subtask of multi-label text classification with a taxonomic hierarchy. Existing methods have difficulties in modeling the hierarchical label structure in a global view. Furthermore, they cannot make full use of the mutual interactions between the text feature space and the label space. In this paper, we formulate the hierarchy as a directed graph and introduce hierarchy-aware structure encoders for modeling label dependencies. Based on the hierarchy encoder, we propose a novel end-to-end hierarchy-aware global model (HiAGM) with two variants. A multi-label attention variant (HiAGM-LA) learns hierarchy-aware label embeddings through the hierarchy encoder and conducts inductive fusion of label-aware text features. A text feature propagation model (HiAGM-TP) is proposed as the deductive variant that directly feeds text features into hierarchy encoders. Compared with previous works, both HiAGM-LA and HiAGM-TP achieve significant and consistent improvements on three benchmark datasets.",
+    code = "https://github.com/Alibaba-NLP/HiAGM",
+    pdf = "https://www.aclweb.org/anthology/2020.acl-main.104"
+}
+
+
+
+@article{shen2020modeling,
+ author = {Shen, Ying and Ding, Ning and Zheng, Hai-Tao and Li, Yaliang and Yang, Min},
+ journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE),},
+ publisher = {IEEE},
+ title = {Modeling Relation Paths for Knowledge Graph Completion},
+ year = {2020},
+ series = {\newlin TKDE},
+ bibtex_show={true},
+ html = {https://ieeexplore.ieee.org/abstract/document/8974254},
+ abstract = {Knowledge graphs (KG) often encounter knowledge incompleteness. The path reasoning that predicts the unknown path relation between pairwise entities based on existing facts is one of the most promising approaches to the knowledge graph completion. However, most conventional path reasoning methods exclusively consider the entity description included in fact triples, ignoring both the type information of entities and the interaction between different semantic representations. In this study, we propose a novel method, Type-aware Attentive Path Reasoning (TAPR), to complete the knowledge graph by simultaneously considering KG structural information, textual information, and type information. More specifically, we first leverage types to enrich the representational learning of entities and relationships. Next, we describe a type-level attention to select the most relevant type of given entity in a specific triple without any predefined rules or patterns to reduce the impact of noisy types. After learning the distributed representation of all paths, path-level attention assigns different weights to paths, from which relations among entity pairs are calculated. We conduct a series of experiments on a real-world dataset to demonstrate the effectiveness of TAPR. Experimental results show that our method significantly outperforms all baselines on link prediction and entity prediction tasks.},
+ pdf = {https://ieeexplore.ieee.org/abstract/document/8974254},
+}
+
+@inproceedings{2020-paraphrase,
+  title={Integrating Linguistic Knowledge to Sentence Paraphrase Generation},
+  author={Lin, Zibo and Li, Ziran and Ding, Ning and Zheng, Hai-Tao and Shen, Ying and Zhao, Xiaobin and Zheng, Cong-Zhi},
+  booktitle={AAAI},
+  year={2020},
+  series = {\newlin AAAI},
+  bibtex_show={true},
+  pdf = {AAAI2020-para.pdf},
+  code={https://github.com/LINMouMouZiBo/KEPN},
+  html={https://ojs.aaai.org/index.php/AAAI/article/view/6354},
+  abstract={Paraphrase generation aims to rewrite a text with different words while keeping the same meaning. Previous work performs the task based solely on the given dataset while ignoring the availability of external linguistic knowledge. However, it is intuitive that a model can generate more expressive and diverse paraphrase with the help of such knowledge. To fill this gap, we propose Knowledge-Enhanced Paraphrase Network (KEPN), a transformer-based framework that can leverage external linguistic knowledge to facilitate paraphrase generation. (1) The model integrates synonym information from the external linguistic knowledge into the paraphrase generator, which is used to guide the decision on whether to generate a new word or replace it with a synonym. (2) To locate the synonym pairs more accurately, we adopt an incremental encoding scheme to incorporate position information of each synonym. Besides, a multi-task architecture is designed to help the framework jointly learn the selection of synonym pairs and the generation of expressive paraphrase. Experimental results on both English and Chinese datasets show that our method significantly outperforms the state-of-the-art approaches in terms of both automatic and human evaluation.}
+}
+
+@inproceedings{2020-infobox,
+  title     = {Infobox-to-text Generation with Tree-like Planning based Attention Network},
+  author    = {Bai, Yang and Li, Ziran and Ding, Ning and Shen, Ying and Zheng, Hai-Tao},
+  booktitle = {IJCAI},
+  series = {\newlin IJCAI},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Christian Bessiere},
+  year      = {2020},
+  bibtex_show={true},
+  html       = {https://doi.org/10.24963/ijcai.2020/522},
+  abstract = {We study the problem of infobox-to-text generation that aims to generate a textual description from a key-value table. Representing the input infobox as a sequence, previous neural methods using end-to-end models without order-planning suffer from the problems of incoherence and inadaptability to disordered input. Recent planning-based models only implement static order-planning to guide the generation, which may cause error propagation between planning and generation. To address these issues, we propose a Tree-like PLanning based Attention Network (Tree-PLAN) which leverages both static order-planning and dynamic tuning to guide the generation. A novel tree-like tuning encoder is designed to dynamically tune the static order-plan for better planning by merging the most relevant attributes together layer by layer. Experiments conducted on two datasets show that our model outperforms previous methods on both automatic and human evaluation, and demonstrate that our model has better adaptability to disordered input.},
+  pdf = {IJCAI2020-infobox.pdf}
+}
+
+@inproceedings{2020:anchor-to-frame,
+  title     = {Triple-to-Text Generation with an Anchor-to-Prototype Framework},
+  author    = {Li, Ziran and Lin, Zibo and Ding, Ning and Zheng, Hai-Tao and Shen, Ying},
+  booktitle = {IJCAI},
+  series = {\newlin IJCAI},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  year      = {2020},
+  bibtex_show={true},
+  doi       = {10.24963/ijcai.2020/523},
+  abstract       = {Generating a textual description from a set of RDF triplets is a challenging task in natural language generation. Recent neural methods have become the mainstream for this task, which often generate sentences from scratch. However, due to the huge gap between the structured input and the unstructured output, the input triples alone are insufficient to decide an expressive and specific description. In this paper, we propose a novel anchor-to-prototype framework to bridge the gap between structured RDF triples and natural text. The model retrieves a set of prototype descriptions from the training data and extracts writing patterns from them to guide the generation process. Furthermore, to make a more precise use of the retrieved prototypes, we employ a triple anchor that aligns the input triples into groups so as to better match the prototypes. Experimental results on both English and Chinese datasets show that our method significantly outperforms the state-of-the-art baselines in terms of both automatic and manual evaluation, demonstrating the benefit of learning guidance from retrieved prototypes to facilitate triple-to-text generation.},
+  html       = {https://doi.org/10.24963/ijcai.2020/523},
+  pdf = {IJCAI2020-triple.pdf}
+
+}
+
+
+@inproceedings{2019:tlnn,
+ address = {HongKong, China},
+ author = {Ding, Ning  and
+Li, Ziran  and
+Liu, Zhiyuan  and
+Zheng, Hai-Tao},
+ booktitle = {EMNLP},
+ month = {October},
+ series = {\newlin EMNLP},
+ publisher = {Association for Computational Linguistics},
+ title = {Event Detection with Trigger-Aware Lattice Neural Network},
+ year = {2019},
+ abstract = {Event detection (ED) aims to locate trigger words in raw text and then classify them into correct event types. In this task, neural net- work based models became mainstream in re- cent years. However, two problems arise when it comes to languages without natural delim- iters, such as Chinese. First, word-based mod- els severely suffer from the problem of word- trigger mismatch, limiting the performance of the methods. In addition, even if trigger words could be accurately located, the ambi- guity of polysemy of triggers could still af- fect the trigger classification stage. To ad- dress the two issues simultaneously, we pro- pose the Trigger-aware Lattice Neural Net- work (TLNN). (1) The framework dynami- cally incorporates word and character informa- tion so that the trigger-word mismatch issue can be avoided. (2) Moreover, for polysemous characters and words, we model all senses of them with the help of an external linguistic knowledge base, so as to alleviate the prob- lem of ambiguous triggers. Experiments on two benchmark datasets show that our model could effectively tackle the two issues and outperforms previous state-of-the-art methods significantly, giving the best results. The source code of this paper can be obtained from https://github.com/thunlp/TLNN.},
+ bibtex_show={true},
+ pdf = {https://www.aclweb.org/anthology/D19-1033/},
+ html = {https://www.aclweb.org/anthology/D19-1033/},
+ code = {https://github.com/thunlp/TLNN},
+}
+
+@inproceedings{2019:multigrained,
+    title = "{C}hinese Relation Extraction with Multi-Grained Information and External Linguistic Knowledge",
+    author = "Li, Ziran*  and
+      Ding, Ning*  and
+      Liu, Zhiyuan  and
+      Zheng, Hai-Tao  and
+      Shen, Ying",
+    booktitle = "ACL",
+    month = jul,
+    year = "2019",
+    series = {\newlin ACL},
+    publisher = "Association for Computational Linguistics",
+    html = "https://www.aclweb.org/anthology/P19-1430",
+    doi = "10.18653/v1/P19-1430",
+    pages = "4377--4386",
+    abstract = "Chinese relation extraction is conducted using neural networks with either character-based or word-based inputs, and most existing methods typically suffer from segmentation errors and ambiguity of polysemy. To address the issues, we propose a multi-grained lattice framework (MG lattice) for Chinese relation extraction to take advantage of multi-grained language information and external linguistic knowledge. In this framework, (1) we incorporate word-level information into character sequence inputs so that segmentation errors can be avoided. (2) We also model multiple senses of polysemous words with the help of external linguistic knowledge, so as to alleviate polysemy ambiguity. Experiments on three real-world datasets in distinct domains show consistent and significant superiority and robustness of our model, as compared with other baselines. We will release the source code of this paper in the future.",
+    bibtex_show={true},
+    data = "https://github.com/thunlp/Chinese_NRE/tree/master/data/FinRE",
+    pdf = "https://www.aclweb.org/anthology/P19-1430",
+    code = "https://github.com/thunlp/Chinese_NRE",
+    award={ <br>  <font color="BB0A21">  Oral Presentation  </font>}
+}
+
+
 
