@@ -1,9 +1,9 @@
 - username: HiLab-git
   repositories:
     - UPL-SFDA
-    - SicTTA
-    - A3-TTA
     - FPL-plus
+    - A3-TTA
+    - SicTTA
 
 
 - username: JianghaoWu
