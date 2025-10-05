@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://jianghaowu.github.io/sitemap.xml
