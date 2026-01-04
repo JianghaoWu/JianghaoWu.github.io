@@ -8,7 +8,7 @@ description: <a href="https://www.monash.edu/it"><font color = "#3E3E3E">  </fon
 
 profile:
   align: right
-  image: wjh_pic_color.jpg
+  image: photo_wjh121.png
   address: 
     <p>Monash University</p>
     <p>Melbourne, Australia</p>
